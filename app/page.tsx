@@ -12,24 +12,32 @@ export default function Home() {
         <section className="mb-16">
           <h3 className="mb-8 text-body-bold">ABOUT</h3>
           <article className="text-body text-accent-4">
-            Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis nulla eu sagittis. Quisque nec eros
-            eget lectus fermentum vehicula. Donec odio leo, tristique sit amet fringilla a, pellentesque eu nibh. In
-            dapibus ex ut leo molestie, quis rhoncus turpis vulputate. Vestibulum vitae condimentum nibh, at semper
-            ipsum. Praesent accumsan nisl in tempor tincidunt. Fusce id viverra mi, eget faucibus. pellentesque eu nibh.
-            In dapibus ex ut leo molestie, quis rhoncus turpis vulputate. Vestibulum vitae condimentum nibh, at semper
-            ipsum. Praesent accumsan nisl in tempor tincidunt. Fusce id viverra mi, eget faucibus.
+            Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
+            mollis nulla eu sagittis. Quisque nec eros eget lectus fermentum
+            vehicula. Donec odio leo, tristique sit amet fringilla a,
+            pellentesque eu nibh. In dapibus ex ut leo molestie, quis rhoncus
+            turpis vulputate. Vestibulum vitae condimentum nibh, at semper
+            ipsum. Praesent accumsan nisl in tempor tincidunt. Fusce id viverra
+            mi, eget faucibus. pellentesque eu nibh. In dapibus ex ut leo
+            molestie, quis rhoncus turpis vulputate. Vestibulum vitae
+            condimentum nibh, at semper ipsum. Praesent accumsan nisl in tempor
+            tincidunt. Fusce id viverra mi, eget faucibus.
           </article>
         </section>
         <section>
           <h3 className="text-body-bold">EXPERIENCES</h3>
           <ol>
             <li className="mt-8">
-              <header className="text-xs text-accent-4">MAR, 2022 — AUG,2023</header>
+              <header className="text-xs text-accent-4">
+                MAR, 2022 — AUG,2023
+              </header>
               <div className="mt-2">
                 <h3 className="mb-2 text-body">UI Engineer</h3>
                 <p className="text-small">
-                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis nulla eu sagittis. Quisque nec
-                  eros eget lectus fermentum vehicula. Donec odio leo, tristique sit amet fringilla a,
+                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
+                  mollis nulla eu sagittis. Quisque nec eros eget lectus
+                  fermentum vehicula. Donec odio leo, tristique sit amet
+                  fringilla a,
                 </p>
                 <ul>
                   <li className="text-small">React</li>
@@ -43,12 +51,16 @@ export default function Home() {
               </div>
             </li>
             <li className="mt-8">
-              <header className="text-xs text-accent-4">NOV, 2019 — MAR, 2022</header>
+              <header className="text-xs text-accent-4">
+                NOV, 2019 — MAR, 2022
+              </header>
               <div className="mt-2">
                 <h3 className="mb-2 text-body">Junior UI Engineer</h3>
                 <p className="text-small">
-                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis nulla eu sagittis. Quisque nec
-                  eros eget lectus fermentum vehicula. Donec odio leo, tristique sit amet fringilla a,
+                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
+                  mollis nulla eu sagittis. Quisque nec eros eget lectus
+                  fermentum vehicula. Donec odio leo, tristique sit amet
+                  fringilla a,
                 </p>
                 <ul>
                   <li className="text-small">React</li>
@@ -62,12 +74,16 @@ export default function Home() {
               </div>
             </li>
             <li className="mt-8">
-              <header className="text-xs text-accent-4">JUL, 2018 — NOV, 2019</header>
+              <header className="text-xs text-accent-4">
+                JUL, 2018 — NOV, 2019
+              </header>
               <div className="mt-2">
                 <h3 className="mb-2 text-body">Data Warehouse Engineer</h3>
                 <p className="text-small">
-                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis nulla eu sagittis. Quisque nec
-                  eros eget lectus fermentum vehicula. Donec odio leo, tristique sit amet fringilla a,
+                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
+                  mollis nulla eu sagittis. Quisque nec eros eget lectus
+                  fermentum vehicula. Donec odio leo, tristique sit amet
+                  fringilla a,
                 </p>
                 <ul>
                   <li className="text-small">React</li>
@@ -81,12 +97,16 @@ export default function Home() {
               </div>
             </li>
             <li className="mt-8">
-              <header className="text-xs text-accent-4">NOV, 2016 — JUL, 2018</header>
+              <header className="text-xs text-accent-4">
+                NOV, 2016 — JUL, 2018
+              </header>
               <div className="mt-2">
                 <h3 className="mb-2 text-body">QA Analyst</h3>
                 <p className="text-small">
-                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis nulla eu sagittis. Quisque nec
-                  eros eget lectus fermentum vehicula. Donec odio leo, tristique sit amet fringilla a,
+                  Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
+                  mollis nulla eu sagittis. Quisque nec eros eget lectus
+                  fermentum vehicula. Donec odio leo, tristique sit amet
+                  fringilla a,
                 </p>
                 <ul>
                   <li className="text-small">React</li>

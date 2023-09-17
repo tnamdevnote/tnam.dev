@@ -48,7 +48,7 @@ const config: Config = {
         subtitle: ['1.5rem', { fontWeight: 'bold' }],
         h3: ['1.5rem', { fontWeight: 'bold' }],
         h2: ['2.5rem', { fontWeight: 'bold' }],
-        h1: ['4rem', { fontWeight: 'bold' }],
+        h1: ['3.5rem', { fontWeight: 'bold' }],
       },
     },
   },
