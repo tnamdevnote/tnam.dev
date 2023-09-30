@@ -1,16 +1,21 @@
 export default function Home() {
   return (
-    <main className="mx-auto grid max-w-screen-lg grid-cols-12 gap-8 px-6 py-12 lg:px-20 lg:py-28">
-      <header className="col-span-full lg:col-span-6">
+    <main className="mx-auto grid min-h-screen max-w-screen-lg grid-cols-12 gap-8 px-6 py-12 lg:px-20 lg:py-0">
+      <header className="col-span-full lg:sticky lg:top-0 lg:col-span-6 lg:max-h-screen lg:gap-8 lg:py-24">
         <div>
           <h1 className="text-h2 sm:text-h1">Taek B. Nam</h1>
           <span className="text-body-bold">Frontend Developer</span>
           <p className="text-body text-accent-4">Aspiring Frontend Developer</p>
         </div>
+        <nav className="hidden lg:block">
+          <a>ABOUT</a>
+          <a>EXPERIENCES</a>
+          <a>PROJECT</a>
+        </nav>
       </header>
-      <main className="col-span-full mt-16 lg:col-span-6">
+      <main className="col-span-full mt-16 lg:col-span-6 lg:m-0 lg:py-24">
         <section className="mb-16">
-          <h3 className="mb-8 text-body-bold">ABOUT</h3>
+          <h3 className="mb-8 text-body-bold lg:hidden">ABOUT</h3>
           <article className="text-body text-accent-4">
             Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
             mollis nulla eu sagittis. Quisque nec eros eget lectus fermentum
@@ -25,7 +30,7 @@ export default function Home() {
           </article>
         </section>
         <section>
-          <h3 className="text-body-bold">EXPERIENCES</h3>
+          <h3 className="text-body-bold lg:hidden">EXPERIENCES</h3>
           <ol>
             <li className="mt-8">
               <header className="text-xs text-accent-4">
