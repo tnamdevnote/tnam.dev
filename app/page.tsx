@@ -4,13 +4,39 @@ export default function Home() {
       <header className="col-span-full lg:sticky lg:top-0 lg:col-span-6 lg:max-h-screen lg:gap-8 lg:py-24">
         <div>
           <h1 className="text-h2 sm:text-h1">Taek B. Nam</h1>
-          <span className="text-body-bold">Frontend Developer</span>
-          <p className="text-body text-accent-4">Aspiring Frontend Developer</p>
+          <span className="text-h3 font-light">Frontend Developer</span>
+          <p className="mt-4 text-body text-accent-4">
+            I enjoy creating polished user interfaces, but also deeply care
+            about crafting products that enhance user experience.
+          </p>
         </div>
-        <nav className="hidden lg:block">
-          <a>ABOUT</a>
-          <a>EXPERIENCES</a>
-          <a>PROJECT</a>
+        <nav className="hidden lg:mt-14 lg:block ">
+          <ul className="flex flex-col gap-4">
+            <li className="cursor-pointer">
+              <a href="#" className="group flex items-center">
+                <span className="mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>
+                <span className="text-accent-3 group-hover:text-accent-6 group-focus-visible:text-accent-6">
+                  ABOUT
+                </span>
+              </a>
+            </li>
+            <li className="cursor-pointer">
+              <a href="#" className="group flex items-center">
+                <span className="mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>
+                <span className="text-accent-3 group-hover:text-accent-6 group-focus-visible:text-accent-6">
+                  EXPERIENCES
+                </span>
+              </a>
+            </li>
+            <li className="cursor-pointer">
+              <a href="#" className="group flex items-center">
+                <span className="mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>
+                <span className="text-accent-3 group-hover:text-accent-6 group-focus-visible:text-accent-6">
+                  PROJECTS
+                </span>
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main className="col-span-full mt-16 lg:col-span-6 lg:m-0 lg:py-24">
