@@ -1,17 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
-const toc = [
-  {
-    name: "ABOUT",
-    path: "#about",
-  },
-  {
-    name: "EXPERIENCE",
-    path: "#experience",
-  },
-];
+import { TOC_LIST } from "@/config";
 
 function TableOfContents() {
   const [currentPath, setCurrentPath] = useState("");
@@ -29,7 +19,7 @@ function TableOfContents() {
 
   return (
     <ul className="flex flex-col gap-4">
-      {toc.map(({ name, path }) => {
+      {TOC_LIST.map(({ name, path }) => {
         return (
           <li key={name} className="cursor-pointer">
             <a
