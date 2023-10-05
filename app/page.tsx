@@ -1,26 +1,15 @@
 "use client";
 
-import { useRef } from "react";
 import Link from "next/link";
+import TableOfContents from "./components/tableofcontents";
 
 export default function Home() {
-  const aboutRef = useRef<HTMLElement>(null);
-  const experienceRef = useRef<HTMLElement>(null);
-  const projectRef = useRef<HTMLElement>(null);
-
-  // const handleClick = () => {
-  //   aboutRef.current?.scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //   });
-  // };
-
   return (
     <main className="mx-auto grid min-h-screen max-w-screen-lg grid-cols-12 gap-8 px-6 py-12 lg:px-20 lg:py-0">
       <header className="col-span-full lg:sticky lg:top-0 lg:col-span-6 lg:max-h-screen lg:gap-8 lg:py-24">
         <hgroup>
           <h1 className="text-h2 sm:text-h1">
-            <Link href="#">Taek B. Nam</Link>
+            <Link href="/">Taek B. Nam</Link>
           </h1>
           <h3 className="text-h3 font-light">Frontend Developer</h3>
           <p className="mt-4 text-body text-accent-4">
@@ -28,37 +17,12 @@ export default function Home() {
             about crafting products that enhance user experience.
           </p>
         </hgroup>
-        <nav className="hidden lg:mt-14 lg:block ">
-          <ul className="flex flex-col gap-4">
-            <li className="cursor-pointer">
-              <Link href="#top" className="group flex items-center">
-                <span className="mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>
-                <span className="text-small text-accent-3 group-hover:text-accent-6 group-focus-visible:text-accent-6">
-                  ABOUT
-                </span>
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="#experience" className="group flex items-center">
-                <span className="mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>
-                <span className="text-small text-accent-3 group-hover:text-accent-6 group-focus-visible:text-accent-6">
-                  EXPERIENCE
-                </span>
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="#projects" className="group flex items-center">
-                <span className="mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>
-                <span className="text-small text-accent-3 group-hover:text-accent-6 group-focus-visible:text-accent-6">
-                  PROJECTS
-                </span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <aside className="hidden lg:mt-14 lg:block">
+          <TableOfContents />
+        </aside>
       </header>
       <main className="col-span-full mt-16 lg:col-span-6 lg:m-0 lg:py-24">
-        <section id="about" className="mb-16" ref={aboutRef}>
+        <section id="about" className="mb-36 scroll-mt-24">
           <h3 className="mb-8 text-body-bold lg:hidden">ABOUT</h3>
           <article className="text-body text-accent-4">
             Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
@@ -73,7 +37,7 @@ export default function Home() {
             tincidunt. Fusce id viverra mi, eget faucibus.
           </article>
         </section>
-        <section id="experience" ref={experienceRef}>
+        <section id="experience" className="scroll-mt-24">
           <h3 className="text-body-bold lg:hidden">EXPERIENCE</h3>
           <ol>
             <li className="mt-8">
