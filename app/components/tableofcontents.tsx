@@ -11,6 +11,10 @@ const toc = [
     name: "EXPERIENCE",
     path: "#experience",
   },
+  {
+    name: "PROJECTS",
+    path: "#projects",
+  },
 ];
 
 function TableOfContents() {
