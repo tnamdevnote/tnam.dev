@@ -4,7 +4,7 @@ import { createContext, useContext, useMemo, useState } from "react";
 
 type TOCListContext = {
   activePath: string;
-  setActivePath: (currentId: string) => void;
+  setActivePath: (currentPath: string) => void;
 };
 
 type TOCListProvider = { children: React.ReactNode };
