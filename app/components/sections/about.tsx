@@ -1,4 +1,4 @@
-import useOnVisible from "@/app/hooks/useOnVisible";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import React, { useEffect, useRef } from "react";
 
 type AboutProps = {
@@ -8,7 +8,7 @@ type AboutProps = {
 function About({ onActive: handleActive }: AboutProps) {
   // const aboutRef = useNav();
   const aboutRef = useRef(null);
-  const isVisible = useOnVisible(aboutRef);
+  const isVisible = useIntersectionObserver(aboutRef);
 
   useEffect(() => {
     if (isVisible) {

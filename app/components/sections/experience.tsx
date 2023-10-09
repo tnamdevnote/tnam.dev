@@ -1,4 +1,4 @@
-import useOnVisible from "@/app/hooks/useOnVisible";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import React, { useEffect, useRef } from "react";
 
 type ExpProps = {
@@ -8,7 +8,7 @@ type ExpProps = {
 function Experience({ onActive: handleActive }: ExpProps) {
   // const expRef = useNav();
   const expRef = useRef(null);
-  const isVisible = useOnVisible(expRef);
+  const isVisible = useIntersectionObserver(expRef);
 
   useEffect(() => {
     if (isVisible) {

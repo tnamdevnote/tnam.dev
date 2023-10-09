@@ -2,7 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 
-export default function useOnVisible(ref: React.RefObject<HTMLElement>) {
+export default function useIntersectionObserver(
+  ref: React.RefObject<HTMLElement>,
+) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
