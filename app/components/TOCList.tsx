@@ -3,15 +3,12 @@
 import React, { useEffect } from "react";
 import { TOC_LIST } from "@/config";
 
-type TableOfContentsProps = {
+type TOCListProps = {
   activePath: string;
   onActive: (activePath: string) => void;
 };
 
-function TableOfContents({
-  activePath,
-  onActive: handleActivePath,
-}: TableOfContentsProps) {
+function TOCList({ activePath, onActive: handleActivePath }: TOCListProps) {
   useEffect(() => {
     const handleHashChange = () => {
       handleActivePath(location.hash);
@@ -46,4 +43,4 @@ function TableOfContents({
   );
 }
 
-export default TableOfContents;
+export default TOCList;

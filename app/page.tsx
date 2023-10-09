@@ -1,6 +1,6 @@
 "use client";
 
-import TableOfContents from "./components/tableofcontents";
+import TOCList from "./components/TOCList";
 import About from "./components/sections/about";
 import Experience from "./components/sections/experience";
 import { useState } from "react";
@@ -26,10 +26,7 @@ export default function Home() {
           </p>
         </hgroup>
         <aside className="hidden lg:mt-14 lg:block">
-          <TableOfContents
-            activePath={activePath}
-            onActive={handleActivePath}
-          />
+          <TOCList activePath={activePath} onActive={handleActivePath} />
         </aside>
       </header>
       <main className="col-span-full mt-16 lg:col-span-6 lg:m-0 lg:py-24">
