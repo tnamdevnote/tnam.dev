@@ -1,8 +1,11 @@
+import useNav from "@/app/hooks/useNav";
 import React from "react";
 
 function Experience() {
+  const expRef = useNav();
+
   return (
-    <section id="experience" className="scroll-mt-24">
+    <section id="experience" className="scroll-mt-24" ref={expRef}>
       <h3 className="text-body-bold lg:hidden">EXPERIENCE</h3>
       <ol>
         <li className="mt-8">

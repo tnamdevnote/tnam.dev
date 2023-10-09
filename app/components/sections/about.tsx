@@ -1,8 +1,11 @@
+import useNav from "@/app/hooks/useNav";
 import React from "react";
 
 function About() {
+  const aboutRef = useNav();
+
   return (
-    <section id="about" className="mb-36 scroll-mt-24">
+    <section id="about" className="mb-36 scroll-mt-24" ref={aboutRef}>
       <h3 className="mb-8 text-body-bold lg:hidden">ABOUT</h3>
       <article className="text-body text-accent-4">
         Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis

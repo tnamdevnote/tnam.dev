@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import TableOfContents from "./components/tableofcontents";
 import About from "./components/sections/about";
 import Experience from "./components/sections/experience";
@@ -11,7 +10,7 @@ export default function Home() {
       <header className="col-span-full lg:sticky lg:top-0 lg:col-span-6 lg:max-h-screen lg:gap-8 lg:py-24">
         <hgroup>
           <h1 className="text-h2 sm:text-h1">
-            <Link href="/">Taek B. Nam</Link>
+            <a href="/">Taek B. Nam</a>
           </h1>
           <h3 className="text-h3 font-light">Frontend Developer</h3>
           <p className="mt-4 text-body text-accent-4">
