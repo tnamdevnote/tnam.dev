@@ -5,12 +5,12 @@ import React, { useEffect, useState } from "react";
 export default function useIntersectionObserver(
   ref: React.RefObject<HTMLElement>,
 ) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        setIsIntersecting(entry.isIntersecting);
       },
       {
         root: null,
@@ -24,5 +24,5 @@ export default function useIntersectionObserver(
     return () => observer.disconnect();
   }, []);
 
-  return isVisible;
+  return isIntersecting;
 }

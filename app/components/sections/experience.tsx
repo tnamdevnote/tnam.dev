@@ -8,13 +8,13 @@ type ExpProps = {
 function Experience({ onActive: handleActive }: ExpProps) {
   // const expRef = useNav();
   const expRef = useRef(null);
-  const isVisible = useIntersectionObserver(expRef);
+  const isIntersecting = useIntersectionObserver(expRef);
 
   useEffect(() => {
-    if (isVisible) {
+    if (isIntersecting) {
       handleActive("#experience");
     }
-  }, [isVisible]);
+  }, [isIntersecting]);
 
   return (
     <section id="experience" className="scroll-mt-24" ref={expRef}>

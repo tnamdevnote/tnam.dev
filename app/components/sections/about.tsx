@@ -8,13 +8,13 @@ type AboutProps = {
 function About({ onActive: handleActive }: AboutProps) {
   // const aboutRef = useNav();
   const aboutRef = useRef(null);
-  const isVisible = useIntersectionObserver(aboutRef);
+  const isIntersecting = useIntersectionObserver(aboutRef);
 
   useEffect(() => {
-    if (isVisible) {
+    if (isIntersecting) {
       handleActive("#about");
     }
-  }, [isVisible]);
+  }, [isIntersecting]);
 
   return (
     <section id="about" className="mb-36 scroll-mt-24" ref={aboutRef}>
