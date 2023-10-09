@@ -1,18 +1,15 @@
+import { useTOCListContext } from "@/app/context/TOCListContext";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import React, { useEffect, useRef } from "react";
 
-type AboutProps = {
-  onActive: (activeId: string) => void;
-};
-
-function About({ onActive: handleActive }: AboutProps) {
-  // const aboutRef = useNav();
+function About() {
   const aboutRef = useRef(null);
   const isIntersecting = useIntersectionObserver(aboutRef);
+  const { setActivePath } = useTOCListContext();
 
   useEffect(() => {
     if (isIntersecting) {
-      handleActive("#about");
+      setActivePath("#about");
     }
   }, [isIntersecting]);
 

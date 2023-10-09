@@ -2,16 +2,14 @@
 
 import React, { useEffect } from "react";
 import { TOC_LIST } from "@/config";
+import { useTOCListContext } from "../context/TOCListContext";
 
-type TOCListProps = {
-  activePath: string;
-  onActive: (activePath: string) => void;
-};
+function TOCList() {
+  const { activePath, setActivePath } = useTOCListContext();
 
-function TOCList({ activePath, onActive: handleActivePath }: TOCListProps) {
   useEffect(() => {
     const handleHashChange = () => {
-      handleActivePath(location.hash);
+      setActivePath(location.hash);
     };
     window.addEventListener("hashchange", handleHashChange);
 
