@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { TOC_LIST } from "@/config";
 
 function TableOfContents() {
-  const [currentPath, setCurrentPath] = useState("");
+  const [currentPath, setCurrentPath] = useState(location.hash || "#about");
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -16,6 +16,8 @@ function TableOfContents() {
       window.removeEventListener("hashchange", handleHashChange);
     };
   }, []);
+
+  console.log(currentPath);
 
   return (
     <ul className="flex flex-col gap-4">

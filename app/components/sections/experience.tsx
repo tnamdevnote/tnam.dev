@@ -1,8 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-function Experience() {
+const Experience = forwardRef(function Experience(
+  props,
+  ref: React.Ref<HTMLElement>,
+) {
   return (
-    <section id="experience" className="scroll-mt-24">
+    <section id="experience" className="scroll-mt-24" ref={ref}>
       <h3 className="text-body-bold lg:hidden">EXPERIENCE</h3>
       <ol>
         <li className="mt-8">
@@ -96,6 +99,6 @@ function Experience() {
       </ol>
     </section>
   );
-}
+});
 
 export default Experience;
