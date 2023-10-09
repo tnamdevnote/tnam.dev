@@ -3,12 +3,18 @@
 import React, { useEffect, useState } from "react";
 import { TOC_LIST } from "@/config";
 
-function TableOfContents() {
-  const [currentPath, setCurrentPath] = useState("");
+type TableOfContentsProps = {
+  activePath: string;
+  onActive: (activePath: string) => void;
+};
 
+function TableOfContents({
+  activePath,
+  onActive: handleActivePath,
+}: TableOfContentsProps) {
   useEffect(() => {
     const handleHashChange = () => {
-      setCurrentPath(location.hash);
+      handleActivePath(location.hash);
     };
     window.addEventListener("hashchange", handleHashChange);
 
@@ -25,7 +31,7 @@ function TableOfContents() {
             <a
               href={path}
               className={`group flex items-center ${
-                currentPath === path ? "active" : ""
+                activePath === path ? "active" : ""
               }`}
             >
               <span className="toc-indicator mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>

@@ -1,8 +1,21 @@
 import useNav from "@/app/hooks/useNav";
-import React from "react";
+import useOnVisible from "@/app/hooks/useOnVisible";
+import React, { useEffect, useRef } from "react";
 
-function About() {
-  const aboutRef = useNav();
+type AboutProps = {
+  onActive: (activeId: string) => void;
+};
+
+function About({ onActive: handleActive }: AboutProps) {
+  // const aboutRef = useNav();
+  const aboutRef = useRef(null);
+  const isVisible = useOnVisible(aboutRef);
+
+  useEffect(() => {
+    if (isVisible) {
+      handleActive("#about");
+    }
+  }, [isVisible]);
 
   return (
     <section id="about" className="mb-36 scroll-mt-24" ref={aboutRef}>

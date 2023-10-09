@@ -1,8 +1,21 @@
 import useNav from "@/app/hooks/useNav";
-import React from "react";
+import useOnVisible from "@/app/hooks/useOnVisible";
+import React, { useEffect, useRef } from "react";
 
-function Experience() {
-  const expRef = useNav();
+type ExpProps = {
+  onActive: (activeId: string) => void;
+};
+
+function Experience({ onActive: handleActive }: ExpProps) {
+  // const expRef = useNav();
+  const expRef = useRef(null);
+  const isVisible = useOnVisible(expRef);
+
+  useEffect(() => {
+    if (isVisible) {
+      handleActive("#experience");
+    }
+  }, [isVisible]);
 
   return (
     <section id="experience" className="scroll-mt-24" ref={expRef}>

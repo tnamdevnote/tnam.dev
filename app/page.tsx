@@ -3,8 +3,15 @@
 import TableOfContents from "./components/tableofcontents";
 import About from "./components/sections/about";
 import Experience from "./components/sections/experience";
+import { useState } from "react";
 
 export default function Home() {
+  const [activePath, setActivePath] = useState("");
+
+  const handleActivePath = (currentId: string) => {
+    setActivePath(currentId);
+  };
+
   return (
     <main className="mx-auto grid min-h-screen max-w-screen-lg grid-cols-12 gap-8 px-6 py-12 lg:px-20 lg:py-0">
       <header className="col-span-full lg:sticky lg:top-0 lg:col-span-6 lg:max-h-screen lg:gap-8 lg:py-24">
@@ -19,12 +26,15 @@ export default function Home() {
           </p>
         </hgroup>
         <aside className="hidden lg:mt-14 lg:block">
-          <TableOfContents />
+          <TableOfContents
+            activePath={activePath}
+            onActive={handleActivePath}
+          />
         </aside>
       </header>
       <main className="col-span-full mt-16 lg:col-span-6 lg:m-0 lg:py-24">
-        <About />
-        <Experience />
+        <About onActive={handleActivePath} />
+        <Experience onActive={handleActivePath} />
       </main>
     </main>
   );
