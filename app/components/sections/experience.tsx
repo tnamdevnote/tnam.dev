@@ -1,8 +1,20 @@
-import React from "react";
+import { useTOCListContext } from "@/app/context/TOCListContext";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import React, { useEffect, useRef } from "react";
 
 function Experience() {
+  const expRef = useRef(null);
+  const isIntersecting = useIntersectionObserver(expRef);
+  const { setActivePath } = useTOCListContext();
+
+  useEffect(() => {
+    if (isIntersecting) {
+      setActivePath("#experience");
+    }
+  }, [isIntersecting]);
+
   return (
-    <section id="experience" className="scroll-mt-24">
+    <section id="experience" className="scroll-mt-24" ref={expRef}>
       <h3 className="text-body-bold lg:hidden">EXPERIENCE</h3>
       <ol>
         <li className="mt-8">

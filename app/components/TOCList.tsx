@@ -1,14 +1,15 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { TOC_LIST } from "@/config";
+import { useTOCListContext } from "../context/TOCListContext";
 
-function TableOfContents() {
-  const [currentPath, setCurrentPath] = useState("");
+function TOCList() {
+  const { activePath, setActivePath } = useTOCListContext();
 
   useEffect(() => {
     const handleHashChange = () => {
-      setCurrentPath(location.hash);
+      setActivePath(location.hash);
     };
     window.addEventListener("hashchange", handleHashChange);
 
@@ -25,7 +26,7 @@ function TableOfContents() {
             <a
               href={path}
               className={`group flex items-center ${
-                currentPath === path ? "active" : ""
+                activePath === path ? "active" : ""
               }`}
             >
               <span className="toc-indicator mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-6 group-focus-visible:w-16 group-focus-visible:bg-accent-6"></span>
@@ -40,4 +41,4 @@ function TableOfContents() {
   );
 }
 
-export default TableOfContents;
+export default TOCList;

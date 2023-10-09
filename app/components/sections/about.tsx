@@ -1,8 +1,20 @@
-import React from "react";
+import { useTOCListContext } from "@/app/context/TOCListContext";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import React, { useEffect, useRef } from "react";
 
 function About() {
+  const aboutRef = useRef(null);
+  const isIntersecting = useIntersectionObserver(aboutRef);
+  const { setActivePath } = useTOCListContext();
+
+  useEffect(() => {
+    if (isIntersecting) {
+      setActivePath("#about");
+    }
+  }, [isIntersecting]);
+
   return (
-    <section id="about" className="mb-36 scroll-mt-24">
+    <section id="about" className="mb-36 scroll-mt-24" ref={aboutRef}>
       <h3 className="mb-8 text-body-bold lg:hidden">ABOUT</h3>
       <article className="text-body text-accent-4">
         Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis
