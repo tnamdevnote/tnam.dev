@@ -1,4 +1,3 @@
-import useNav from "@/app/hooks/useNav";
 import useOnVisible from "@/app/hooks/useOnVisible";
 import React, { useEffect, useRef } from "react";
 
