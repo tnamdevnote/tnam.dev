@@ -17,47 +17,44 @@ export const EXPERIENCE = [
   {
     title: "Frontend Engineer",
     date: "MAR, 2022 — AUG, 2023",
-    description: `Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
-                mollis nulla eu sagittis. Quisque nec eros eget lectus fermentum
-                vehicula. Donec odio leo, tristique sit amet fringilla a`,
-    skills: [
+    description: `Designed and developed 5+ reusable UI components, including dropdown, cards, and popover menu, using Figma, React, styled-components, and and to enhance customizability while maintaining consistency in overall design of the applications.`,
+    techStack: [
       "React",
       "TypeScript",
-      "HTML",
-      "CSS",
-      "redux",
+      "MUI",
       "styled components",
+      "Figma",
+      "Framer Motion",
+      "react-hook-form",
+      "redux-toolkit",
     ],
   },
   {
     title: "Junior Frontend Engineer",
     date: "NOV, 2019 — MAR, 2022",
-    description: `Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
-                mollis nulla eu sagittis. Quisque nec eros eget lectus fermentum
-                vehicula. Donec odio leo, tristique sit amet fringilla a`,
-    skills: [
+    description: `Used React daily to create and maintained 128+ visualizations of school data that help educators analyze trends to improve and support student success`,
+    techStack: [
       "React",
-      "TypeScript",
-      "HTML",
-      "CSS",
+      "JavaScript",
+      "CSS modules",
+      "MUI",
       "redux",
-      "styled components",
+      "redux-saga",
+      "Snowflake",
+      "SQL",
+      "Qliksense",
     ],
   },
   {
     title: "Data Warehouse Specialist",
     date: "NOV, 2018 — NOV, 2019",
-    description: `Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
-                mollis nulla eu sagittis. Quisque nec eros eget lectus fermentum
-                vehicula. Donec odio leo, tristique sit amet fringilla a`,
-    skills: ["SQL", "RDBMS", "ETL"],
+    description: `Developed data pipelines using SQL to ingest statewide assessment data, creating data views for utilization in BI tools like Qliksense`,
+    techStack: ["SQL", "Snowflake", "Data Warehousing", "ETL"],
   },
   {
     title: "QA Analyst",
     date: "NOV, 2016 — NOV, 2018",
-    description: `Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan
-                mollis nulla eu sagittis. Quisque nec eros eget lectus fermentum
-                vehicula. Donec odio leo, tristique sit amet fringilla a`,
-    skills: ["SQL", "Excel"],
+    description: `Learned SQL and basic RDBMS concepts within a month; Expedited data validation process by 50% by writing reusable test queries using SQL after two months`,
+    techStack: ["SQL", "RDBMS", "Excel"],
   },
 ];
