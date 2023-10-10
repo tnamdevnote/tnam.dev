@@ -6,7 +6,7 @@ type CardProps = {
   children: React.ReactNode;
 };
 type CardHeaderProps = {
-  title: string;
+  title: string | React.ReactNode;
   subheader: string;
 };
 type CardContentProps = { children: React.ReactNode };

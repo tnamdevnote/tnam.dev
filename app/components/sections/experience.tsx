@@ -24,29 +24,27 @@ function Experience() {
       <p className="w-full text-small text-accent-4">
         Full-time · NOV 2016 — AUG 2023
       </p>
-      <ol>
+      <ol className="group/list">
         {EXPERIENCE.map((exp) => (
-          <>
-            <span className="lg:stepper__bullet"></span>
-            <li className="lg:stepper mt-8">
-              <Card>
-                <Card.Header title={exp.title} subheader={exp.date} />
-                <Card.Content>
-                  <p className="text-small text-accent-5">{exp.description}</p>
-                  <ul
-                    className="mt-4 flex flex-wrap gap-2"
-                    aria-label="Technology used"
-                  >
-                    {exp.techStack.map((ts) => (
-                      <li>
-                        <Chip label={ts} />
-                      </li>
-                    ))}
-                  </ul>
-                </Card.Content>
-              </Card>
-            </li>
-          </>
+          <li className="lg:stepper relative mt-8 lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+            <span className="lg:stepper__bullet relative"></span>
+            <Card>
+              <Card.Header title={exp.title} subheader={exp.date} />
+              <Card.Content>
+                <p className="text-small text-accent-5">{exp.description}</p>
+                <ul
+                  className="mt-4 flex flex-wrap gap-2"
+                  aria-label="Technology used"
+                >
+                  {exp.techStack.map((ts) => (
+                    <li>
+                      <Chip label={ts} />
+                    </li>
+                  ))}
+                </ul>
+              </Card.Content>
+            </Card>
+          </li>
         ))}
       </ol>
       <a href="/resume.pdf" target="_blank" className="mt-10 inline-block">

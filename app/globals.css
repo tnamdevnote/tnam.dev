@@ -11,8 +11,7 @@
 
 @layer utilities {
   .stepper__bullet {
-    position: relative;
-    top: 3rem;
+    top: 1rem;
     left: -2rem;
     width: 0.5rem;
     height: 0.5rem;
@@ -21,14 +20,10 @@
     @apply bg-accent-3;
   }
 
-  .stepper {
-    position: relative;
-  }
-
   .stepper::before {
     content: "";
     position: absolute;
-    top: 2rem;
+    top: 2.25rem;
     left: calc(-1.75rem - 1px);
     width: 1px;
     height: 100%;
