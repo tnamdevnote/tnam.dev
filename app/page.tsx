@@ -3,6 +3,7 @@
 import TOCList from "./components/TOCList";
 import About from "./components/sections/about";
 import Experience from "./components/sections/experience";
+import Projects from "./components/sections/projects";
 
 import { TOCListProvider } from "./context/TOCListContext";
 
@@ -12,10 +13,15 @@ export default function Home() {
       <TOCListProvider>
         <header className="col-span-full lg:sticky lg:top-0 lg:col-span-3 lg:max-h-screen lg:gap-8 lg:py-24">
           <hgroup>
-            <h1 className="text-h2 sm:text-h1">
-              <a href="/">Taek B. Nam</a>
+            <h1 className="mb-1 text-h2 md:text-h1">
+              <a href="/">hey, I'm taek</a>
+              <span className="ml-2 text-body text-accent-4 sm:text-subtitle sm:font-medium">
+                {"(tɛ́k)"}
+              </span>
             </h1>
-            <h3 className="text-h3 font-light">Frontend Developer</h3>
+            <h3 className="text-h3 font-light text-accent-4">
+              Frontend Developer
+            </h3>
             <p className="mt-4 text-body text-accent-4">
               I enjoy creating polished user interfaces, but also deeply care
               about crafting products that enhance user experience.
@@ -28,6 +34,7 @@ export default function Home() {
         <main className="col-span-full mt-16 lg:col-span-3 lg:m-0 lg:py-24">
           <About />
           <Experience />
+          <Projects />
         </main>
       </TOCListProvider>
     </main>

@@ -58,3 +58,29 @@ export const EXPERIENCE = [
     techStack: ["SQL", "RDBMS", "Excel"],
   },
 ];
+
+export const PROJECTS = [
+  {
+    name: "Build Youtube",
+    description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,
+routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
+    techStack: [
+      "Vite",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "TanstackQuery",
+      "Axios",
+    ],
+    url: "https://yt-demo.netlify.app/",
+    imgUrl: "/yc-mockup-light.png",
+  },
+  {
+    name: "tnam.io",
+    description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,
+routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
+    techStack: ["NextJS", "React", "TypeScript", "TailwindCSS"],
+    url: "https://yt-demo.netlify.app/",
+    imgUrl: "",
+  },
+];

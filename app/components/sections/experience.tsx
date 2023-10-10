@@ -18,15 +18,15 @@ function Experience() {
   }, [isIntersecting]);
 
   return (
-    <section id="experience" className="scroll-mt-24" ref={expRef}>
-      <h3 className="text-body-bold lg:hidden">EXPERIENCE</h3>
+    <section id="experience" className="mb-24 scroll-mt-24" ref={expRef}>
+      <h3 className="text-body-bold text-accent-7 lg:hidden">EXPERIENCE</h3>
       <h3 className="mt-2 text-body text-accent-7">Eidex, LLC</h3>
       <p className="w-full text-small text-accent-4">
         Full-time · NOV 2016 — AUG 2023
       </p>
       <ol className="group/list">
         {EXPERIENCE.map((exp) => (
-          <li className="lg:stepper relative mt-8 lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+          <li className="lg:stepper relative mb-8 lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
             <span className="lg:stepper__bullet relative"></span>
             <Card>
               <Card.Header title={exp.title} subheader={exp.date} />
@@ -47,7 +47,7 @@ function Experience() {
           </li>
         ))}
       </ol>
-      <a href="/resume.pdf" target="_blank" className="mt-10 inline-block">
+      <a href="/resume.pdf" target="_blank" className="inline-block">
         <span className="border-b border-transparent px-1 pb-px text-body text-accent-7 transition hover:border-b-primary-cyan-100">
           Click to see full resume!
         </span>

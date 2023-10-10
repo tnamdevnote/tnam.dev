@@ -7,7 +7,7 @@ type CardProps = {
 };
 type CardHeaderProps = {
   title: string | React.ReactNode;
-  subheader: string;
+  subheader?: string;
 };
 type CardContentProps = { children: React.ReactNode };
 
@@ -17,7 +17,7 @@ function Card({ children }: CardProps) {
 
 function Header({ title, subheader }: CardHeaderProps) {
   return (
-    <div className="mb-2 flex h-full items-center justify-between text-body">
+    <div className="mb-2 flex items-center justify-between text-body">
       <h3 className="text-body text-accent-7">{title}</h3>
       <h5 className="text-xs text-accent-4">{subheader}</h5>
     </div>
