@@ -30,8 +30,14 @@ function Experience() {
               <Card.Header title={exp.title} subheader={exp.date} />
               <Card.Content>
                 <p className="text-small text-accent-6">{exp.description}</p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {exp.skills.map((skill) => (
+                    <li>
+                      <Chip label={skill} />
+                    </li>
+                  ))}
+                </ul>
               </Card.Content>
-              <Chip label="Chip" />
             </Card>
           </li>
         ))}
