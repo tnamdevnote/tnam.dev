@@ -26,24 +26,27 @@ function Experience() {
       </p>
       <ol>
         {EXPERIENCE.map((exp) => (
-          <li className="mt-8">
-            <Card>
-              <Card.Header title={exp.title} subheader={exp.date} />
-              <Card.Content>
-                <p className="text-small text-accent-5">{exp.description}</p>
-                <ul
-                  className="mt-4 flex flex-wrap gap-2"
-                  aria-label="Technology used"
-                >
-                  {exp.techStack.map((ts) => (
-                    <li>
-                      <Chip label={ts} />
-                    </li>
-                  ))}
-                </ul>
-              </Card.Content>
-            </Card>
-          </li>
+          <>
+            <span className="relative -left-8 top-12 block h-2 w-2 rounded-full bg-accent-3"></span>
+            <li className="stepper relative mt-8 flex flex-col before:bg-accent-2">
+              <Card>
+                <Card.Header title={exp.title} subheader={exp.date} />
+                <Card.Content>
+                  <p className="text-small text-accent-5">{exp.description}</p>
+                  <ul
+                    className="mt-4 flex flex-wrap gap-2"
+                    aria-label="Technology used"
+                  >
+                    {exp.techStack.map((ts) => (
+                      <li>
+                        <Chip label={ts} />
+                      </li>
+                    ))}
+                  </ul>
+                </Card.Content>
+              </Card>
+            </li>
+          </>
         ))}
       </ol>
       <a href="/resume.pdf" target="_blank" className="mt-10 inline-block">

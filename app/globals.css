@@ -9,6 +9,18 @@
   @apply text-accent-6;
 }
 
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: calc(-1.75rem - 1px);
+  width: 2px;
+  height: 100%;
+}
+.stepper:last-child:before {
+  display: none;
+}
+
 html,
 body {
   padding: 0;
