@@ -38,6 +38,7 @@ const config: Config = {
           "cyan-75": "#07b6d575",
           "cyan-50": "#07b6d550",
           "cyan-25": "#07b6d525",
+          "cyan-15": "#07b6d515",
         },
       },
       fontSize: {
