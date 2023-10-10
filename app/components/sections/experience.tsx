@@ -27,8 +27,8 @@ function Experience() {
       <ol>
         {EXPERIENCE.map((exp) => (
           <>
-            <span className="relative -left-8 top-12 block h-2 w-2 rounded-full bg-accent-3"></span>
-            <li className="stepper relative mt-8 flex flex-col before:bg-accent-2">
+            <span className="lg:stepper__bullet"></span>
+            <li className="lg:stepper mt-8">
               <Card>
                 <Card.Header title={exp.title} subheader={exp.date} />
                 <Card.Content>

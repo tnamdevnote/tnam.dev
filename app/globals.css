@@ -9,16 +9,34 @@
   @apply text-accent-6;
 }
 
-.stepper::before {
-  content: "";
-  position: absolute;
-  top: 2rem;
-  left: calc(-1.75rem - 1px);
-  width: 2px;
-  height: 100%;
-}
-.stepper:last-child:before {
-  display: none;
+@layer utilities {
+  .stepper__bullet {
+    position: relative;
+    top: 3rem;
+    left: -2rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    border-radius: 999px;
+    @apply bg-accent-3;
+  }
+
+  .stepper {
+    position: relative;
+  }
+
+  .stepper::before {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: calc(-1.75rem - 1px);
+    width: 1px;
+    height: 100%;
+    @apply bg-accent-2;
+  }
+  .stepper:last-child:before {
+    display: none;
+  }
 }
 
 html,
