@@ -22,7 +22,7 @@ function TOCList() {
     <ul className="flex flex-col gap-4">
       {TOC_LIST.map(({ name, path }) => {
         return (
-          <li key={name} className="cursor-pointer">
+          <li key={name} className="flex">
             <a
               href={path}
               className={`group flex items-center ${

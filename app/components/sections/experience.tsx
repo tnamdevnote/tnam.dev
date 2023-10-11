@@ -31,7 +31,7 @@ function Experience() {
             <Card>
               <Card.Header title={exp.title} subheader={exp.date} />
               <Card.Content>
-                <p className="text-small text-accent-4">{exp.description}</p>
+                <p className="text-small text-accent-5">{exp.description}</p>
                 <ul
                   className="mt-4 flex flex-wrap gap-2"
                   aria-label="Technology used"
