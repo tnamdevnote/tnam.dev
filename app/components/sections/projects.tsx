@@ -22,37 +22,47 @@ function Projects() {
       <ol className="group/list">
         {PROJECTS.map((project) => (
           <li className="relative mt-8 flex flex-row lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-            <img
-              src={project.imgUrl}
-              alt={project.name}
-              className="mr-4 self-start object-scale-down"
-              width="150px"
-              height="40px"
-            />
-            <Card>
-              <Card.Header
-                title={
-                  <a href={project.url} target="_blank">
-                    {project.name}
-                  </a>
-                }
+            <div className="group grid gap-4 p-4 sm:grid-cols-8">
+              <div className="absolute -inset-x-6 -inset-y-2 -z-10 hidden h-[110%] w-[110%] rounded-xl transition-all lg:block lg:group-hover:bg-accent-1/50 lg:group-hover:drop-shadow-md"></div>
+              <img
+                src={project.imgUrl}
+                alt={project.name}
+                className="order-2 self-start object-scale-down sm:order-1 sm:col-span-3 md:col-span-2"
+                width="150px"
+                height="40px"
               />
-              <Card.Content>
-                <p className="text-small text-accent-4">
-                  {project.description}
-                </p>
-                <ul
-                  className="mt-4 flex flex-wrap gap-2"
-                  aria-label="Technology used"
-                >
-                  {project.techStack.map((ts) => (
-                    <li>
-                      <Chip label={ts} />
-                    </li>
-                  ))}
-                </ul>
-              </Card.Content>
-            </Card>
+              <div className="order-1 sm:order-2 sm:col-span-5 md:col-span-6">
+                <Card>
+                  <Card.Header
+                    title={
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        className="transition-all hover:text-primary-cyan-100"
+                      >
+                        <span className="absolute -inset-x-6 -inset-y-2 hidden h-[110%] w-[110%] lg:block"></span>
+                        {project.name}
+                      </a>
+                    }
+                  />
+                  <Card.Content>
+                    <p className="text-small text-accent-4">
+                      {project.description}
+                    </p>
+                    <ul
+                      className="mt-4 flex flex-wrap gap-2"
+                      aria-label="Technology used"
+                    >
+                      {project.techStack.map((ts) => (
+                        <li>
+                          <Chip label={ts} />
+                        </li>
+                      ))}
+                    </ul>
+                  </Card.Content>
+                </Card>
+              </div>
+            </div>
           </li>
         ))}
       </ol>
