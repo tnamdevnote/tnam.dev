@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from "react";
 import Card from "../card/card";
 import { EXPERIENCE } from "@/config";
 import Chip from "../chip/chip";
-import Link from "next/link";
 
 function Experience() {
   const expRef = useRef(null);
@@ -26,7 +25,10 @@ function Experience() {
       </p>
       <ol className="group/list">
         {EXPERIENCE.map((exp) => (
-          <li className="lg:stepper relative mb-8 lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+          <li
+            key={exp.title}
+            className="lg:stepper relative mb-8 lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
             <span className="lg:stepper__bullet relative"></span>
             <Card>
               <Card.Header title={exp.title} subheader={exp.date} />
@@ -37,7 +39,7 @@ function Experience() {
                   aria-label="Technology used"
                 >
                   {exp.techStack.map((ts) => (
-                    <li>
+                    <li key={ts}>
                       <Chip label={ts} />
                     </li>
                   ))}

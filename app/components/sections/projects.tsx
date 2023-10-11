@@ -21,17 +21,20 @@ function Projects() {
       <h3 className="text-body-bold text-accent-7 lg:hidden">PROJECTS</h3>
       <ol className="group/list">
         {PROJECTS.map((project) => (
-          <li className="relative mt-8 flex flex-row lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+          <li
+            key={project.name}
+            className="relative mt-8 flex flex-row lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
             <div className="group grid gap-4 sm:grid-cols-8 lg:py-4">
-              <div className="absolute -inset-x-6 -inset-y-2 -z-10 hidden h-[110%] w-[110%] rounded-xl transition-all lg:block lg:group-hover:bg-accent-1 lg:group-hover:shadow-lg"></div>
+              <div className="absolute -inset-x-6 -inset-y-2 z-10 hidden h-[110%] w-[110%] rounded-xl transition-all lg:block lg:group-hover:bg-accent-1 lg:group-hover:shadow-lg"></div>
               <img
                 src={project.imgUrl}
                 alt={project.name}
-                className="order-2 self-start object-scale-down sm:order-1 sm:col-span-2"
+                className="z-20 order-2 self-start object-scale-down sm:order-1 sm:col-span-2"
                 width="150px"
                 height="40px"
               />
-              <div className="order-1 sm:order-2 sm:col-span-6">
+              <div className="z-20 order-1 sm:order-2 sm:col-span-6">
                 <Card>
                   <Card.Header
                     title={
@@ -54,7 +57,7 @@ function Projects() {
                       aria-label="Technology used"
                     >
                       {project.techStack.map((ts) => (
-                        <li>
+                        <li key={ts}>
                           <Chip label={ts} />
                         </li>
                       ))}
