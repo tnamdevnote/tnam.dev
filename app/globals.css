@@ -49,6 +49,10 @@ body {
   box-sizing: border-box;
 }
 
+*::selection {
+  background: #07b6d550;
+}
+
 a {
   /* text-decoration: none; */
 }
