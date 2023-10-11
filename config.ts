@@ -80,7 +80,7 @@ routing, and data fetching. The application provides search and streaming featur
     description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,
 routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
     techStack: ["NextJS", "React", "TypeScript", "TailwindCSS"],
-    url: "https://yt-demo.netlify.app/",
+    url: "https://localhost:3000/",
     imgUrl: "",
   },
 ];
