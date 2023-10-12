@@ -72,7 +72,7 @@ routing, and data fetching. The application provides search and streaming featur
       "TanstackQuery",
       "Axios",
     ],
-    url: "https://yt-demo.netlify.app/",
+    url: "https://github.com/tnamdevnote/youtube-clone",
     imgUrl: "/yc-mockup-light.png",
   },
   {
@@ -81,6 +81,6 @@ routing, and data fetching. The application provides search and streaming featur
 routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
     techStack: ["NextJS", "React", "TypeScript", "TailwindCSS"],
     url: "/",
-    imgUrl: "/yc-mockup-light.png",
+    imgUrl: "/tnam.io.png",
   },
 ];
