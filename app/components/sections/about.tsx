@@ -1,3 +1,5 @@
+"use client";
+
 import { useTOCListContext } from "@/app/context/TOCListContext";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import React, { useEffect, useRef } from "react";

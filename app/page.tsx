@@ -1,5 +1,3 @@
-"use client";
-
 import TOCList from "./components/TOCList";
 import Cursor from "./components/cursor/cursor";
 import About from "./components/sections/about";
