@@ -1,18 +1,32 @@
-import useCursorCoordinates from "@/app/hooks/useCursorCoordinates";
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 
 function Cursor() {
-  const { x, y } = useCursorCoordinates();
+  const cursorRef = useRef<HTMLDivElement>(null);
 
-  return (
-    <div
-      className={`pointer-events-none fixed z-20 h-6 w-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white text-white mix-blend-exclusion`}
-      style={{
-        top: y,
-        left: x,
-      }}
-    ></div>
-  );
+  const handleCursorMovement = (e: MouseEvent) => {
+    const { clientX, clientY } = e;
+    const cursor = cursorRef.current;
+    if (cursor) {
+      console.log(
+        clientX,
+        cursor.clientWidth,
+        clientX - cursor.clientWidth / 2,
+      );
+      const mouseX = clientX - cursor.clientWidth / 2;
+      const mouseY = clientY - cursor.clientHeight / 2;
+      cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", (e) => handleCursorMovement(e));
+
+    return () =>
+      document.removeEventListener("mousemove", (e) => handleCursorMovement(e));
+  }, []);
+  return <div className="cursor bg-primary-cyan-100" ref={cursorRef}></div>;
 }
 
 export default Cursor;

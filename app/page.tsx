@@ -11,6 +11,7 @@ import { TOCListProvider } from "./context/TOCListContext";
 export default function Home() {
   return (
     <>
+      <Cursor />
       <main className="mx-auto grid min-h-screen max-w-screen-xl grid-cols-12 gap-8 px-6 py-12 md:px-14 md:py-24 lg:grid-cols-6 lg:gap-10 lg:px-20 lg:py-0">
         <TOCListProvider>
           <header className="col-span-full lg:sticky lg:top-0 lg:col-span-3 lg:max-h-screen lg:gap-8 lg:py-24">
@@ -40,7 +41,6 @@ export default function Home() {
           </main>
         </TOCListProvider>
       </main>
-      <Cursor />
     </>
   );
 }
