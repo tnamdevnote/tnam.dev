@@ -9,19 +9,6 @@
   @apply text-accent-6;
 }
 
-@layer components {
-  .cursor {
-    position: fixed;
-    width: 1.5rem;
-    height: 1.5rem;
-    pointer-events: none;
-    border-radius: 999px;
-    mix-blend-mode: exclusion;
-    transform: translate3d(-100px, -100px, 0);
-    z-index: 1000;
-  }
-}
-
 @layer utilities {
   .stepper__bullet {
     top: 1rem;

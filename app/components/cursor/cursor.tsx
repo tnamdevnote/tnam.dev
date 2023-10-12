@@ -9,11 +9,6 @@ function Cursor() {
     const { clientX, clientY } = e;
     const cursor = cursorRef.current;
     if (cursor) {
-      console.log(
-        clientX,
-        cursor.clientWidth,
-        clientX - cursor.clientWidth / 2,
-      );
       const mouseX = clientX - cursor.clientWidth / 2;
       const mouseY = clientY - cursor.clientHeight / 2;
       cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
@@ -26,7 +21,13 @@ function Cursor() {
     return () =>
       document.removeEventListener("mousemove", (e) => handleCursorMovement(e));
   }, []);
-  return <div className="cursor bg-primary-cyan-100" ref={cursorRef}></div>;
+
+  return (
+    <div
+      className="pointer-events-none fixed z-50 h-6 w-6 -translate-x-10 -translate-y-10 rounded-full bg-[#224290] mix-blend-exclusion"
+      ref={cursorRef}
+    ></div>
+  );
 }
 
 export default Cursor;
