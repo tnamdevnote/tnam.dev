@@ -6,6 +6,7 @@ import React, { useEffect, useRef } from "react";
 import Card from "../card/card";
 import { PROJECTS } from "@/config";
 import Chip from "../chip/chip";
+import ArrowIcon from "../icon/arrowIcon";
 
 function Projects() {
   const projectsRef = useRef(null);
@@ -43,10 +44,11 @@ function Projects() {
                       <a
                         href={project.url}
                         target="_blank"
-                        className="transition-all hover:text-primary-cyan-100"
+                        className="flex items-center gap-2 transition-all hover:text-primary-cyan-100"
                       >
                         <span className="absolute -inset-x-6 -inset-y-2 hidden h-[110%] w-[110%] lg:block"></span>
                         {project.name}
+                        <ArrowIcon />
                       </a>
                     }
                   />
