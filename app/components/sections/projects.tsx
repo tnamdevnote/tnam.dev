@@ -21,12 +21,12 @@ function Projects() {
 
   return (
     <section id="projects" className="scroll-mt-24" ref={projectsRef}>
-      <h3 className="text-body-bold text-accent-7 lg:hidden">PROJECTS</h3>
+      <h3 className="mb-4 text-body-bold text-accent-7 lg:hidden">PROJECTS</h3>
       <ol className="group/list">
         {PROJECTS.map((project) => (
           <li
             key={project.name}
-            className="relative mt-8 flex flex-row lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+            className="relative mb-8 flex flex-row lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
           >
             <div className="group grid gap-4 sm:grid-cols-8 lg:py-4">
               <div className="absolute -inset-x-6 -inset-y-2 z-10 hidden h-[110%] w-[110%] rounded-xl transition-all lg:block lg:group-hover:bg-accent-1 lg:group-hover:shadow-lg"></div>

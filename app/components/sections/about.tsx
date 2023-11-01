@@ -17,7 +17,7 @@ function About() {
 
   return (
     <section id="about" className="mb-36 scroll-mt-24" ref={aboutRef}>
-      <h3 className="mb-8 text-body-bold text-accent-7 lg:hidden">ABOUT</h3>
+      <h3 className="mb-4 text-body-bold text-accent-7 lg:hidden">ABOUT</h3>
       <article className="text-body text-accent-4">
         Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis
         nulla eu sagittis. Quisque nec eros eget lectus fermentum vehicula.

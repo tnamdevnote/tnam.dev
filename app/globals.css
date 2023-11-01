@@ -48,11 +48,11 @@ body {
 
 * {
   box-sizing: border-box;
-  cursor: none;
+  /* cursor: none; */
 }
 
 *::selection {
-  background: #07b6d550;
+  /* background: #07b6d550; */
 }
 
 a {

@@ -24,7 +24,7 @@ function Cursor() {
 
   return (
     <div
-      className="pointer-events-none fixed z-50 h-6 w-6 -translate-x-10 -translate-y-10 rounded-full bg-primary-cyan-100"
+      className="pointer-events-none fixed z-50 h-6 w-6 -translate-x-10 -translate-y-10 rounded-full bg-primary-cyan-100 will-change-transform"
       ref={cursorRef}
     ></div>
   );
