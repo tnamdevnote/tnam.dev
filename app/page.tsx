@@ -1,3 +1,4 @@
+import Image from "next/image";
 import TOCList from "./components/TOCList";
 import Cursor from "./components/cursor/cursor";
 import GithubIcon from "./components/icon/githubIcon";
@@ -16,8 +17,22 @@ export default function Home() {
         <TOCListProvider>
           <header className="lg: col-span-full flex-col lg:sticky lg:top-0 lg:col-span-3 lg:flex lg:max-h-screen lg:gap-8 lg:py-24">
             <hgroup>
+              <div
+                className="mb-4 w-fit rounded-full"
+                aria-label="profile photo"
+              >
+                <Image
+                  src="/profile-1.png"
+                  width="61"
+                  height="63"
+                  alt="profile photo"
+                />
+              </div>
               <h1 className="mb-1 text-h2 lg:text-h1">
-                <a href="/">hey, I'm luke</a>
+                <a href="/">
+                  hey, I'm Taek
+                  <span className="ml-2 text-lg text-accent-5">{"(tɛ́k)"}</span>
+                </a>
               </h1>
               <h3 className="text-h3 font-light text-accent-4">
                 Frontend Developer
