@@ -7,6 +7,7 @@ import Card from "../card/card";
 import { PROJECTS } from "@/config";
 import Chip from "../chip/chip";
 import ArrowIcon from "../icon/arrowIcon";
+import Image from "next/image";
 
 function Projects() {
   const projectsRef = useRef(null);
@@ -30,12 +31,12 @@ function Projects() {
           >
             <div className="group grid gap-4 sm:grid-cols-8 lg:py-4">
               <div className="absolute -inset-x-6 -inset-y-2 z-10 hidden h-[110%] w-[110%] rounded-xl transition-all lg:block lg:group-hover:bg-accent-1 lg:group-hover:shadow-lg"></div>
-              <img
+              <Image
                 src={project.imgUrl}
                 alt={project.name}
                 className="z-20 order-2 self-start object-scale-down sm:order-1 sm:col-span-2"
-                width="150px"
-                height="40px"
+                width="150"
+                height="40"
               />
               <div className="z-20 order-1 sm:order-2 sm:col-span-6">
                 <Card>

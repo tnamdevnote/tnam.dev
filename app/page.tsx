@@ -8,6 +8,7 @@ import Experience from "./components/sections/experience";
 import Projects from "./components/sections/projects";
 
 import { TOCListProvider } from "./context/TOCListContext";
+import MailIcon from "./components/icon/mailIcon";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
               <div className="mt-4 flex gap-4 lg:hidden">
                 <GithubIcon />
                 <LinkedInIcon />
+                <MailIcon />
               </div>
             </hgroup>
             <aside className="lg:h hidden lg:mt-14 lg:flex lg:flex-grow lg:flex-col lg:justify-between">
