@@ -53,6 +53,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <GithubIcon className="h-8 w-8" />
                 <LinkedInIcon className="h-8 w-8" />
+                <MailIcon className="h-8 w-8" />
               </div>
             </aside>
           </header>

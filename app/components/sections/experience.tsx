@@ -55,7 +55,7 @@ function Experience() {
         ))}
       </ol>
       <a href="/resume.pdf" target="_blank" className="inline-block">
-        <span className="flex items-center gap-2 border-b border-transparent px-1 pb-px text-body text-accent-7 transition hover:border-b-primary-cyan-100">
+        <span className="flex items-center gap-2 border-b border-transparent px-1 pb-px text-body text-accent-7 transition hover:border-b-accent-8">
           Click to see full resume!
           <ArrowIcon />
         </span>
