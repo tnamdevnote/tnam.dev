@@ -19,13 +19,14 @@ export default function Home() {
           <header className="lg: col-span-full flex-col lg:sticky lg:top-0 lg:col-span-3 lg:flex lg:max-h-screen lg:gap-8 lg:py-24">
             <hgroup>
               <div
-                className="mb-4 w-fit rounded-full"
+                className="mb-4 w-fit rounded-full border-[1px] border-accent-2 p-1 shadow-lg"
                 aria-label="profile photo"
               >
                 <Image
                   src="/profile-1.png"
                   width="61"
                   height="63"
+                  style={{ width: "auto", height: "auto" }}
                   alt="profile photo"
                 />
               </div>
