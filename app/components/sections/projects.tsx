@@ -45,7 +45,7 @@ function Projects() {
                       <a
                         href={project.url}
                         target="_blank"
-                        className="flex items-center gap-2 transition-all hover:text-primary-cyan-100"
+                        className="flex items-center gap-2 transition-all hover:text-teal-500"
                       >
                         <span className="absolute -inset-x-6 -inset-y-2 hidden h-[110%] w-[110%] lg:block"></span>
                         {project.name}

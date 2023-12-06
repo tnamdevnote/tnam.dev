@@ -9,6 +9,8 @@ import Projects from "./components/sections/projects";
 
 import { TOCListProvider } from "./context/TOCListContext";
 import MailIcon from "./components/icon/mailIcon";
+import { CONTACTS } from "@/config";
+import Icon from "./components/icon/icon";
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
           <header className="lg: col-span-full flex-col lg:sticky lg:top-0 lg:col-span-3 lg:flex lg:max-h-screen lg:gap-8 lg:py-24">
             <hgroup>
               <div
-                className="mb-4 w-fit rounded-full border-[1px] border-accent-2 p-1 shadow-lg"
+                className="mb-4 w-fit rounded-full" // border-[1px] border-accent-2 p-1 shadow-lg"
                 aria-label="profile photo"
               >
                 <Image
@@ -44,17 +46,39 @@ export default function Home() {
                 delivering user-friendly products with engineering excellence.
               </p>
               <div className="mt-4 flex gap-4 lg:hidden">
-                <GithubIcon />
-                <LinkedInIcon />
-                <MailIcon />
+                {CONTACTS.map((contact) => (
+                  <a
+                    key={contact.name}
+                    href={contact.url}
+                    aria-label={contact.name}
+                    target="_blank"
+                    className="group rounded-lg text-accent-4 transition-all group-hover:text-accent-8"
+                  >
+                    <Icon
+                      name={contact.name}
+                      className="transition-transform group-hover:scale-[1.1]"
+                    />
+                  </a>
+                ))}
               </div>
             </hgroup>
             <aside className="lg:h hidden lg:mt-14 lg:flex lg:flex-grow lg:flex-col lg:justify-between">
               <TOCList />
               <div className="flex gap-4">
-                <GithubIcon className="h-8 w-8" />
-                <LinkedInIcon className="h-8 w-8" />
-                <MailIcon className="h-8 w-8" />
+                {CONTACTS.map((contact) => (
+                  <a
+                    key={contact.name}
+                    href={contact.url}
+                    aria-label={contact.name}
+                    target="_blank"
+                    className="group rounded-lg text-accent-4 transition-all group-hover:text-accent-8"
+                  >
+                    <Icon
+                      name={contact.name}
+                      className="h-8 w-8 transition-transform group-hover:scale-[1.1]"
+                    />
+                  </a>
+                ))}
               </div>
             </aside>
           </header>

@@ -1,3 +1,7 @@
+import GithubIcon from "./app/components/icon/githubIcon";
+import LinkedInIcon from "./app/components/icon/linkedinIcon";
+import MailIcon from "./app/components/icon/mailIcon";
+
 export const TOC_LIST = [
   {
     name: "ABOUT",
@@ -82,5 +86,20 @@ routing, and data fetching. The application provides search and streaming featur
     techStack: ["NextJS", "React", "TypeScript", "TailwindCSS"],
     url: "/",
     imgUrl: "/tnam.io.png",
+  },
+];
+
+export const CONTACTS = [
+  {
+    name: "Github",
+    url: "https://github.com/tnamdevnote",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/luke-tb-nam/",
+  },
+  {
+    name: "Email",
+    url: "mailto:taekbeen93@gmail.com",
   },
 ];
