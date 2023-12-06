@@ -1,14 +1,10 @@
 import Image from "next/image";
 import TOCList from "./components/TOCList";
-import Cursor from "./components/cursor/cursor";
-import GithubIcon from "./components/icon/githubIcon";
-import LinkedInIcon from "./components/icon/linkedinIcon";
 import About from "./components/sections/about";
 import Experience from "./components/sections/experience";
 import Projects from "./components/sections/projects";
 
 import { TOCListProvider } from "./context/TOCListContext";
-import MailIcon from "./components/icon/mailIcon";
 import { CONTACTS } from "@/config";
 import Icon from "./components/icon/icon";
 
@@ -71,11 +67,11 @@ export default function Home() {
                     href={contact.url}
                     aria-label={contact.name}
                     target="_blank"
-                    className="group rounded-lg text-accent-4 transition-all group-hover:text-accent-8"
+                    className="group rounded-lg text-accent-6 transition-all group-hover:text-accent-8"
                   >
                     <Icon
                       name={contact.name}
-                      className="h-8 w-8 transition-transform group-hover:scale-[1.1]"
+                      className="h-8 w-8 font-bold transition-transform group-hover:scale-[1.1]"
                     />
                   </a>
                 ))}

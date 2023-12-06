@@ -54,10 +54,10 @@ function Experience() {
           </li>
         ))}
       </ol>
-      <a href="/resume.pdf" target="_blank" className="inline-block">
-        <span className="flex items-center gap-2 border-b border-transparent px-1 pb-px text-body text-accent-7 transition hover:border-b-accent-8">
+      <a href="/resume.pdf" target="_blank" className="group inline-block">
+        <span className="flex items-center gap-2 border-b border-transparent px-1 pb-px text-body text-accent-7 transition group-hover:border-b-accent-8">
           Click to see full resume!
-          <ArrowIcon />
+          <ArrowIcon className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
         </span>
       </a>
     </section>
