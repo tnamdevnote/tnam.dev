@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .active .toc-indicator {
-  @apply w-16 bg-primary-cyan-100;
+  @apply w-16 bg-accent-8;
 }
 .active .toc-text {
-  @apply text-primary-cyan-100;
+  @apply text-accent-8;
 }
 
 @layer utilities {

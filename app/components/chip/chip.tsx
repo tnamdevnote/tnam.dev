@@ -8,7 +8,7 @@ type ChipProps = {
 function Chip({ title, label }: ChipProps) {
   return (
     <div
-      className="inline-block max-w-sm overflow-hidden text-ellipsis rounded-full bg-primary-cyan-15 px-3 py-1 text-pretitle font-normal text-primary-cyan-100"
+      className="inline-block max-w-sm overflow-hidden text-ellipsis rounded-full  px-3 py-1 text-pretitle font-normal text-teal-400"
       title={title}
     >
       {label}
