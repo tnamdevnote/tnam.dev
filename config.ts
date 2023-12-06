@@ -1,7 +1,3 @@
-import GithubIcon from "./app/components/icon/githubIcon";
-import LinkedInIcon from "./app/components/icon/linkedinIcon";
-import MailIcon from "./app/components/icon/mailIcon";
-
 export const TOC_LIST = [
   {
     name: "ABOUT",
@@ -50,13 +46,13 @@ export const EXPERIENCE = [
     ],
   },
   {
-    title: "Data Warehouse Specialist",
+    title: "Data Warehouse Developer",
     date: "NOV, 2018 — NOV, 2019",
     description: `Developed data pipelines using SQL to ingest statewide assessment data, creating data views for utilization in BI tools like Qliksense`,
     techStack: ["SQL", "Snowflake", "Data Warehousing", "ETL"],
   },
   {
-    title: "QA Analyst",
+    title: "Data Analyst",
     date: "NOV, 2016 — NOV, 2018",
     description: `Learned SQL and basic RDBMS concepts within a month; Expedited data validation process by 50% by writing reusable test queries using SQL after two months`,
     techStack: ["SQL", "RDBMS", "Excel"],
@@ -64,6 +60,14 @@ export const EXPERIENCE = [
 ];
 
 export const PROJECTS = [
+  {
+    name: "PRISM 2.0 Design Handout",
+    description: `This is a collection of design mockups that I designed and developed sduring the most recent project at my work. 
+    The document contains collections of hi-fi mockups and as well as other design resources, such as components and style guide.`,
+    techStack: ["Figma", "Styled Component", "MUI"],
+    url: "https://drive.google.com/file/d/1ie0TmU0l7xZgQHco36pcX8u9EniGs551/view?usp=sharing",
+    imgUrl: "/prism-2.png",
+  },
   {
     name: "Build Youtube",
     description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,

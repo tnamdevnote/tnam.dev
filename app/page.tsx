@@ -28,7 +28,7 @@ export default function Home() {
                   alt="profile photo"
                 />
               </div>
-              <h1 className="mb-1 text-h2 lg:text-h1">
+              <h1 className="mb-1 text-h2 lg:text-h2">
                 <a href="/">
                   hey, I'm Taek
                   <span className="ml-2 text-lg text-accent-5">{"(tɛ́k)"}</span>
@@ -39,7 +39,7 @@ export default function Home() {
               </h3>
               <p className="mt-4 text-body text-accent-4 lg:max-w-sm">
                 Empathetic, detail-oriented frontend developer passionate about
-                delivering user-friendly products with engineering excellence.
+                building products that bring a pleasant experience to users.
               </p>
               <div className="mt-4 flex gap-4 lg:hidden">
                 {CONTACTS.map((contact) => (
@@ -67,7 +67,7 @@ export default function Home() {
                     href={contact.url}
                     aria-label={contact.name}
                     target="_blank"
-                    className="group rounded-lg text-accent-6 transition-all group-hover:text-accent-8"
+                    className="group rounded-lg text-accent-5 transition-all group-hover:text-accent-8"
                   >
                     <Icon
                       name={contact.name}
