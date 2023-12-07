@@ -47,7 +47,7 @@ const config: Config = {
         "dark-accent-8": "#fafafa",
         "dark-foreground": "#ffffff",
 
-        body: "#4a4a68",
+        // body: "#4a4a68",
         "text/subtle": "#8c8ca1",
         primary: {
           "cyan-100": "#07b6d5",
