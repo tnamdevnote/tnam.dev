@@ -7,7 +7,7 @@ import Projects from "./components/sections/projects";
 import { TOCListProvider } from "./context/TOCListContext";
 import { CONTACTS } from "@/config";
 import Icon from "./components/icon/icon";
-import ToggleButton from "./components/dropdown/toggleButton";
+import ToggleButton from "./components/themeToggle/themeToggle";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         </nav>
         <section className="mx-auto grid min-h-screen max-w-screen-xl grid-cols-6 gap-8 px-6 py-16 md:grid-cols-12 md:px-14 md:py-20 lg:grid-cols-6 lg:gap-10 lg:px-20 lg:py-0">
           <TOCListProvider>
-            <header className="lg: col-span-full flex-col lg:fixed lg:top-0 lg:col-span-3 lg:flex lg:h-screen lg:gap-8 lg:pb-24 lg:pt-24">
+            <header className="lg: col-span-full flex-col lg:fixed lg:top-0 lg:col-span-3 lg:flex lg:min-h-screen lg:gap-8 lg:pb-24 lg:pt-24">
               <hgroup>
                 <div
                   className="mb-4 w-fit rounded-full shadow-lg"
@@ -44,7 +44,7 @@ export default function Home() {
                 <h3 className="dark:text-dark-accent-6 text-h3 font-light text-accent-4">
                   Frontend Developer
                 </h3>
-                <p className="dark:text-dark-accent-6 mt-4 text-body text-accent-4 lg:max-w-sm">
+                <p className="dark:text-dark-accent-7 mt-4 text-body text-accent-4 lg:max-w-sm">
                   A thoughtful problem solver. Enjoys designing and building for
                   web.
                 </p>

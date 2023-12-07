@@ -6,6 +6,7 @@ import {
   useEffect,
   useMemo,
   useReducer,
+  useState,
 } from "react";
 
 export type State = { mode: string; isDarkMode: boolean };
@@ -16,79 +17,30 @@ export type Action =
 export type Dispatch = (action: Action) => void;
 
 interface DarkModeContextInterface {
-  state: State;
-  dispatch: Dispatch;
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
 }
 
 const DarkModeContext = createContext<DarkModeContextInterface | undefined>(
   undefined,
 );
 
-function darkModeReducer(state: State, action: Action) {
-  switch (action.type) {
-    case "LIGHT_THEME": {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-      return { ...state, mode: "light", isDarkMode: false };
-    }
-    case "DARK_THEME": {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-      return { ...state, mode: "dark", isDarkMode: true };
-    }
-    case "USER_DEVICE": {
-      const isDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)",
-      ).matches;
-      isDarkMode
-        ? document.documentElement.classList.add("dark")
-        : document.documentElement.classList.remove("dark");
-      localStorage.theme = "userDevice";
-      return { ...state, mode: "userDevice", isDarkMode };
-    }
-    default:
-      throw new Error(`Unsupported action type`);
-  }
-}
-
 // Dark mode Provider
 export function DarkModeProvider({ children }: { children: React.ReactNode }) {
-  // TODO: optimize intialstate, so that the component don't read into localstorage or call matchMedia every render
-  const [state, dispatch] = useReducer(darkModeReducer, {
-    mode: "",
-    isDarkMode: false,
-  });
+  const [isDarkMode, setIsDarkMod] = useState(false);
 
-  useEffect(() => {
-    if (localStorage.theme === "dark") {
-      dispatch({ type: "DARK_THEME" });
-    } else if (localStorage.theme === "light") {
-      dispatch({ type: "LIGHT_THEME" });
-    } else {
-      dispatch({ type: "USER_DEVICE" });
-    }
-  }, []);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-    if (state.mode === "userDevice") {
-      mediaQuery.addEventListener("change", () =>
-        dispatch({ type: "USER_DEVICE" }),
-      );
-      return () =>
-        mediaQuery.removeEventListener("change", () =>
-          dispatch({ type: "USER_DEVICE" }),
-        );
-    }
-  }, [state.mode]);
+  // toggle component state and as well as toggle class="dark" in html
+  const toggleDarkMode = () => {
+    setIsDarkMod((prev) => !prev);
+    updateDarkMode(!isDarkMode);
+  };
 
   const providerValue = useMemo(
     () => ({
-      state,
-      dispatch,
+      isDarkMode,
+      toggleDarkMode,
     }),
-    [state, dispatch],
+    [isDarkMode, toggleDarkMode],
   );
 
   return (
@@ -96,6 +48,14 @@ export function DarkModeProvider({ children }: { children: React.ReactNode }) {
       {children}
     </DarkModeContext.Provider>
   );
+}
+
+function updateDarkMode(darkMode: boolean) {
+  if (darkMode) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
 }
 
 // Custom hook to toggle dark mode.
