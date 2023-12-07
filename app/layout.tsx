@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { DarkModeProvider } from "./context/darkmodeContext";
 // import { ThemeProvider } from "./components/theme/theme-provider";
 
 export const metadata: Metadata = {
@@ -20,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
+      <DarkModeProvider>
+        <body>{children}</body>
+      </DarkModeProvider>
     </html>
   );
 }
