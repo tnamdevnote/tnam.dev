@@ -1,20 +1,6 @@
 "use client";
 
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useMemo,
-  useReducer,
-  useState,
-} from "react";
-
-export type State = { mode: string; isDarkMode: boolean };
-export type Action =
-  | { type: "LIGHT_THEME" }
-  | { type: "DARK_THEME" }
-  | { type: "USER_DEVICE" };
-export type Dispatch = (action: Action) => void;
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 interface DarkModeContextInterface {
   isDarkMode: boolean;

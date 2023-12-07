@@ -5,7 +5,7 @@ import { DarkModeProvider } from "./context/darkmodeContext";
 // import { ThemeProvider } from "./components/theme/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Taek B. Nam",
+  title: "tnamdevnote",
   description: "Welcome to tnamdevnote",
 };
 
