@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,6 +22,8 @@ const config: Config = {
         error: "#ee0000",
         warning: "#f5a623",
         light: "#fafcfe",
+
+        // light mode
         background: "#ffffff",
         "accent-1": "#fafafa",
         "accent-2": "#eaeaea",
@@ -31,6 +34,19 @@ const config: Config = {
         "accent-7": "#333333",
         "accent-8": "#111111",
         foreground: "#000000",
+
+        // dark mode
+        "dark-background": "#000000",
+        "dark-accent-1": "#111111",
+        "dark-accent-2": "#333333",
+        "dark-accent-3": "#444444",
+        "dark-accent-4": "#666666",
+        "dark-accent-5": "#888888",
+        "dark-accent-6": "#999999",
+        "dark-accent-7": "#eaeaea",
+        "dark-accent-8": "#fafafa",
+        "dark-foreground": "#ffffff",
+
         body: "#4a4a68",
         "text/subtle": "#8c8ca1",
         primary: {
