@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <DarkModeProvider>
-        <body className="dark:bg-dark-background bg-background">
+        <body className="dark:bg-dark-background bg-background transition-colors">
           {children}
         </body>
       </DarkModeProvider>

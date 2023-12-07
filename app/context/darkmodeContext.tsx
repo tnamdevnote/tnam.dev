@@ -27,13 +27,23 @@ const DarkModeContext = createContext<DarkModeContextInterface | undefined>(
 
 // Dark mode Provider
 export function DarkModeProvider({ children }: { children: React.ReactNode }) {
-  const [isDarkMode, setIsDarkMod] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   // toggle component state and as well as toggle class="dark" in html
   const toggleDarkMode = () => {
-    setIsDarkMod((prev) => !prev);
+    setIsDarkMode((prev) => !prev);
     updateDarkMode(!isDarkMode);
   };
+
+  useEffect(() => {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    const isDark =
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    setIsDarkMode(isDark);
+    updateDarkMode(isDark);
+  }, []);
 
   const providerValue = useMemo(
     () => ({
@@ -53,8 +63,10 @@ export function DarkModeProvider({ children }: { children: React.ReactNode }) {
 function updateDarkMode(darkMode: boolean) {
   if (darkMode) {
     document.documentElement.classList.add("dark");
+    localStorage.theme = "dark";
   } else {
     document.documentElement.classList.remove("dark");
+    localStorage.theme = "light";
   }
 }
 
