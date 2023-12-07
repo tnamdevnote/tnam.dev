@@ -14,7 +14,7 @@ export default function Home() {
     <>
       {/* <Cursor /> */}
       <div className="w-full">
-        <nav className="mx-auto mt-12 flex max-w-screen-xl justify-end px-6 md:px-14 lg:px-20">
+        <nav className="mx-auto flex max-w-screen-xl justify-end px-6 pt-12 md:px-14 lg:px-20">
           <ToggleButton />
         </nav>
         <section className="mx-auto grid min-h-screen max-w-screen-xl grid-cols-6 gap-8 px-6 py-16 md:grid-cols-12 md:px-14 md:py-20 lg:grid-cols-6 lg:gap-10 lg:px-20 lg:py-0">
@@ -33,18 +33,18 @@ export default function Home() {
                     alt="profile photo"
                   />
                 </div>
-                <h1 className="mb-1 text-h2 lg:text-h2">
+                <h1 className="dark:text-dark-accent-8 mb-1 text-h2 text-accent-8 lg:text-h2">
                   <a href="/">
                     hey, I'm Taek
-                    <span className="ml-2 text-lg font-normal text-accent-4">
+                    <span className="dark:text-dark-accent-4 ml-2 text-lg font-normal text-accent-4">
                       {"(tɛ́k)"}
                     </span>
                   </a>
                 </h1>
-                <h3 className="text-h3 font-light text-accent-4">
+                <h3 className="dark:text-dark-accent-6 text-h3 font-light text-accent-4">
                   Frontend Developer
                 </h3>
-                <p className="mt-4 text-body text-accent-4 lg:max-w-sm">
+                <p className="dark:text-dark-accent-6 mt-4 text-body text-accent-4 lg:max-w-sm">
                   A thoughtful problem solver. Enjoys designing and building for
                   web.
                 </p>
@@ -55,7 +55,7 @@ export default function Home() {
                       href={contact.url}
                       aria-label={contact.name}
                       target="_blank"
-                      className="group rounded-lg text-accent-4 transition-all group-hover:text-accent-8"
+                      className="dark:text-dark-accent-7 group rounded-lg text-accent-4 transition-all"
                     >
                       <Icon
                         name={contact.name}
@@ -74,7 +74,7 @@ export default function Home() {
                       href={contact.url}
                       aria-label={contact.name}
                       target="_blank"
-                      className="group rounded-lg text-accent-5 transition-all group-hover:text-accent-8"
+                      className="dark:text-dark-accent-7 group rounded-lg text-accent-5 transition-all"
                     >
                       <Icon
                         name={contact.name}

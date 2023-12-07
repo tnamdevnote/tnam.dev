@@ -13,7 +13,7 @@ function ToggleButton() {
 
   console.log(state);
   return (
-    <button onClick={() => handleClick("LIGHT_THEME")}>
+    <button onClick={() => handleClick("DARK_THEME")}>
       <Icon name="Moon" />
     </button>
   );

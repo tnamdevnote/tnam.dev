@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .active .toc-indicator {
-  @apply w-16 bg-accent-6;
+  @apply dark:bg-dark-accent-7 w-16 bg-accent-6;
 }
 .active .toc-text {
-  @apply text-accent-6;
+  @apply dark:text-dark-accent-7 text-accent-6;
 }
 
 @layer utilities {
