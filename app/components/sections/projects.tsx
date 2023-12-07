@@ -27,10 +27,10 @@ function Projects() {
         {PROJECTS.map((project) => (
           <li
             key={project.name}
-            className="relative mb-8 flex flex-row lg:transition lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+            className="relative mb-8 flex flex-row transition hover:!opacity-100 group-hover/list:opacity-50"
           >
-            <div className="group grid gap-4 sm:grid-cols-8 lg:py-4">
-              <div className="absolute -inset-x-6 -inset-y-2 z-10 hidden h-[110%] w-[110%] rounded-xl transition-all lg:block lg:group-hover:bg-accent-1 lg:group-hover:shadow-lg"></div>
+            <div className="group grid gap-4 rounded-xl p-6 transition-all hover:bg-accent-1 sm:grid-cols-8 lg:py-4">
+              {/* <div className="absolute -inset-x-6 -inset-y-2 z-10 h-[110%] w-[110%] rounded-xl transition-all group-hover:bg-accent-1 lg:block"></div> */}
               <Image
                 src={project.imgUrl}
                 alt={project.name}
@@ -45,7 +45,7 @@ function Projects() {
                       <a
                         href={project.url}
                         target="_blank"
-                        className="flex items-center gap-2 transition-all group-hover:text-teal-500"
+                        className="flex items-center gap-2 transition-all"
                       >
                         <span className="absolute -inset-x-6 -inset-y-2 hidden h-[110%] w-[110%] lg:block"></span>
                         {project.name}

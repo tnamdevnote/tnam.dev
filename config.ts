@@ -17,7 +17,7 @@ export const EXPERIENCE = [
   {
     title: "Frontend Engineer",
     date: "MAR, 2022 — AUG, 2023",
-    description: `Designed and developed 5+ reusable UI components, including dropdown, cards, and popover menu, using Figma, React, styled-components, and and to enhance customizability while maintaining consistency in overall design of the applications.`,
+    description: `Modernized 5+ legacy features through design and development overhaul, addressing user needs and design aesthetic; Communicated design and technical requirements during design reviews within a cross-functional team of 5 by creating wireframes and interactive prototype;`,
     techStack: [
       "React",
       "TypeScript",
@@ -54,18 +54,18 @@ export const EXPERIENCE = [
   {
     title: "Data Analyst",
     date: "NOV, 2016 — NOV, 2018",
-    description: `Learned SQL and basic RDBMS concepts within a month; Expedited data validation process by 50% by writing reusable test queries using SQL after two months`,
+    description: `Expedited data validation process by 50% by writing reusable test queries using SQL after two months; Documented testing manual for the product data validation process, which was adopted across the development team.`,
     techStack: ["SQL", "RDBMS", "Excel"],
   },
 ];
 
 export const PROJECTS = [
   {
-    name: "PRISM 2.0 Design Handout",
-    description: `This is a collection of design mockups that I designed and developed sduring the most recent project at my work. 
-    The document contains collections of hi-fi mockups and as well as other design resources, such as components and style guide.`,
+    name: "PRISM 2.0 Design Mockup (Eidex)",
+    description: `This is a collection of design mockups that I designed and also developed during the most recent project at my work. 
+    I have created this document (also available in Figma) to make sure everyone on the team, developers and product owners were on the same page with the business requirements.`,
     techStack: ["Figma", "Styled Component", "MUI"],
-    url: "https://drive.google.com/file/d/1ie0TmU0l7xZgQHco36pcX8u9EniGs551/view?usp=sharing",
+    url: "https://drive.google.com/file/d/11S1XKpryfGL6QiWGa8eS_RFPZv3Zb2vV/view?usp=sharing",
     imgUrl: "/prism-2.png",
   },
   {
