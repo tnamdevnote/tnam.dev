@@ -13,8 +13,9 @@ export default function Home() {
     <>
       {/* <Cursor /> */}
       <main className="mx-auto grid min-h-screen max-w-screen-xl grid-cols-12 gap-8 px-6 py-24 md:px-14 md:py-32 lg:grid-cols-6 lg:gap-10 lg:px-20 lg:py-0">
+        <nav className="col-span-full h-16"></nav>
         <TOCListProvider>
-          <header className="lg: col-span-full flex-col lg:sticky lg:top-0 lg:col-span-3 lg:flex lg:max-h-screen lg:gap-8 lg:pb-24 lg:pt-44">
+          <header className="lg: col-span-full flex-col lg:sticky lg:top-0 lg:col-span-3 lg:flex lg:max-h-screen lg:gap-8 lg:pb-24 lg:pt-28">
             <hgroup>
               <div
                 className="mb-4 w-fit rounded-full shadow-lg"
@@ -80,7 +81,7 @@ export default function Home() {
               </div>
             </aside>
           </header>
-          <main className="col-span-full mt-16 lg:col-span-3 lg:m-0 lg:pb-24 lg:pt-44">
+          <main className="col-span-full mt-16 lg:col-span-3 lg:m-0 lg:pb-24 lg:pt-28">
             <About />
             <Experience />
             <Projects />

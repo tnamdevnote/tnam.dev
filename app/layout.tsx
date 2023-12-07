@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "./components/theme/theme-provider";
 
 export const metadata: Metadata = {
   title: "Taek B. Nam",
@@ -19,7 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
+      <body>
+        {/* <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        > */}
+        {children}
+        {/* </ThemeProvider> */}
+      </body>
     </html>
   );
 }
