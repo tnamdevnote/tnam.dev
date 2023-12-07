@@ -22,14 +22,16 @@ function Projects() {
 
   return (
     <section id="projects" className="scroll-mt-24" ref={projectsRef}>
-      <h3 className="mb-4 text-body-bold text-accent-7 lg:hidden">PROJECTS</h3>
+      <h3 className="dark:text-dark-accent-8 mb-4 text-body-bold text-accent-8 lg:hidden">
+        PROJECTS
+      </h3>
       <ol className="group/list">
         {PROJECTS.map((project) => (
           <li
             key={project.name}
             className="relative mb-8 flex flex-row transition hover:!opacity-100 group-hover/list:opacity-50"
           >
-            <div className="group grid gap-4 rounded-xl p-6 transition-all hover:bg-accent-1 sm:grid-cols-8 lg:py-4">
+            <div className="dark:bg-dark-accent-8/10 group grid gap-4 rounded-xl p-6 transition-all hover:bg-accent-1/10 sm:grid-cols-8 lg:py-4">
               {/* <div className="absolute -inset-x-6 -inset-y-2 z-10 h-[110%] w-[110%] rounded-xl transition-all group-hover:bg-accent-1 lg:block"></div> */}
               <Image
                 src={project.imgUrl}
@@ -54,7 +56,7 @@ function Projects() {
                     }
                   />
                   <Card.Content>
-                    <p className="text-small text-accent-5">
+                    <p className="dark:text-dark-accent-6 text-small text-accent-5">
                       {project.description}
                     </p>
                     <ul

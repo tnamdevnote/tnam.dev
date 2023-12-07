@@ -21,13 +21,13 @@ function Experience() {
 
   return (
     <section id="experience" className="mb-24 scroll-mt-24" ref={expRef}>
-      <h3 className="dark:text-dark-accent-8 mb-4 text-body-bold text-accent-7 lg:hidden">
+      <h3 className="dark:text-dark-accent-8 mb-4 text-body-bold text-accent-8 lg:hidden">
         EXPERIENCE
       </h3>
       <h3 className="dark:text-dark-accent-7 text-body font-semibold text-accent-7">
         Eidex, LLC
       </h3>
-      <p className="dark:text-dark-accent-7 mb-3 w-full text-small text-accent-4">
+      <p className="dark:text-dark-accent-6 mb-3 w-full text-small text-accent-4">
         Full-time · NOV 2016 — AUG 2023
       </p>
       <ol className="group/list">
