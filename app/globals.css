@@ -17,7 +17,7 @@
     height: 0.5rem;
     display: block;
     border-radius: 999px;
-    @apply bg-accent-3;
+    @apply bg-accent-3 dark:bg-accent-2;
   }
 
   .stepper::before {
@@ -27,7 +27,7 @@
     left: calc(-1.75rem - 1px);
     width: 1px;
     height: 100%;
-    @apply bg-accent-2;
+    @apply bg-accent-2 dark:bg-accent-3;
   }
   .stepper:last-child:before {
     display: none;
@@ -47,7 +47,6 @@ body {
 
 * {
   box-sizing: border-box;
-  /* cursor: none; */
 }
 
 *::selection {

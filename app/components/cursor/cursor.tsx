@@ -1,32 +1,19 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import useMousePosition from "@/app/hooks/useMousePosition";
 
 function Cursor() {
-  const cursorRef = useRef<HTMLDivElement>(null);
-
-  const handleCursorMovement = (e: MouseEvent) => {
-    const { clientX, clientY } = e;
-    const cursor = cursorRef.current;
-    if (cursor) {
-      const mouseX = clientX - cursor.clientWidth / 2;
-      const mouseY = clientY - cursor.clientHeight / 2;
-      cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousemove", (e) => handleCursorMovement(e));
-
-    return () =>
-      document.removeEventListener("mousemove", (e) => handleCursorMovement(e));
-  }, []);
+  const { x, y } = useMousePosition();
 
   return (
-    <div
-      className="pointer-events-none fixed z-50 h-6 w-6 -translate-x-10 -translate-y-10 rounded-full bg-primary-cyan-100 will-change-transform"
-      ref={cursorRef}
-    ></div>
+    <motion.div
+      className="pointer-events-none fixed z-50 h-8 w-8 -translate-x-10 -translate-y-10 rounded-full bg-teal-400 mix-blend-exclusion will-change-transform"
+      animate={{
+        x: x - 32 / 2,
+        y: y - 32 / 2,
+      }}
+    ></motion.div>
   );
 }
 
