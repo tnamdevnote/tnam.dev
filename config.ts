@@ -61,12 +61,27 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    name: "Mini Project: An Animated Like Button",
+    description: `Inspired by Delba and Josh Comeau, I recreated my own version of a like button that not only animates but also persists
+    like counts to a database.`,
+    techStack: [
+      "React",
+      "Next.js",
+      "Prisma",
+      "PlanetScale",
+      "TailwindCSS",
+      "Figma",
+    ],
+    url: "https://medium.com/@taekbeen93/mini-project-how-i-built-a-full-stack-like-button-from-design-to-implementation-701edc1a0f0c",
+    imgUrl: "/project-like-btn.png",
+  },
+  {
     name: "PRISM 2.0 Design Mockup (Eidex)",
     description: `This is a collection of design mockups that I designed and also developed during the most recent project at my work. 
     I have created this document (also available in Figma) to make sure everyone on the team, developers and product owners were on the same page with the business requirements.`,
     techStack: ["Figma", "Styled Component", "MUI"],
     url: "https://drive.google.com/file/d/11S1XKpryfGL6QiWGa8eS_RFPZv3Zb2vV/view?usp=sharing",
-    imgUrl: "/prism-2.png",
+    imgUrl: "/project-prism-2.png",
   },
   {
     name: "Build Youtube",
@@ -81,13 +96,13 @@ routing, and data fetching. The application provides search and streaming featur
       "Axios",
     ],
     url: "https://github.com/tnamdevnote/youtube-clone",
-    imgUrl: "/yc-mockup-light.png",
+    imgUrl: "/project-yc-light.png",
   },
   {
     name: "tnam.io",
     description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,
 routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
-    techStack: ["NextJS", "React", "TypeScript", "TailwindCSS"],
+    techStack: ["Next.js", "React", "TypeScript", "TailwindCSS"],
     url: "/",
     imgUrl: "/tnam.io.png",
   },
