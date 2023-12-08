@@ -14,7 +14,9 @@ function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return null;
+    return (
+      <div className="h-6 w-6 animate-pulse rounded-full bg-accent-1 dark:bg-dark-accent-1/20"></div>
+    );
   }
 
   return (
