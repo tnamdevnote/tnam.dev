@@ -78,9 +78,9 @@ export const PROJECTS = [
   {
     name: "PRISM 2.0 Design Mockup (Eidex)",
     description: `This is a collection of design mockups that I designed and also developed during the most recent project at my work. 
-    I have created this document (also available in Figma) to make sure everyone on the team, developers and product owners were on the same page with the business requirements.`,
+    I have created this document to facilitate communication with the team, making sure engineers and product owner were on the same page with the business requirements.`,
     techStack: ["Figma", "Styled Component", "MUI"],
-    url: "https://drive.google.com/file/d/11S1XKpryfGL6QiWGa8eS_RFPZv3Zb2vV/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1PaqNKYgW0WzZ855CbfyZW8eEIGp2IGje/view?usp=sharing",
     imgUrl: "/project-prism-2.png",
   },
   {
@@ -96,14 +96,6 @@ routing, and data fetching. The application provides search and streaming featur
     ],
     url: "https://github.com/tnamdevnote/youtube-clone",
     imgUrl: "/project-yc-light.png",
-  },
-  {
-    name: "tnam.io",
-    description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,
-routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
-    techStack: ["Next.js", "React", "TypeScript", "TailwindCSS"],
-    url: "/",
-    imgUrl: "/logo-2-dark.png",
   },
 ];
 
