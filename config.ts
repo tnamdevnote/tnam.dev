@@ -88,12 +88,11 @@ export const PROJECTS = [
     description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,
 routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
     techStack: [
-      "Vite",
       "React",
       "TypeScript",
       "TailwindCSS",
       "TanstackQuery",
-      "Axios",
+      "RESTful API",
     ],
     url: "https://github.com/tnamdevnote/youtube-clone",
     imgUrl: "/project-yc-light.png",
@@ -104,7 +103,7 @@ routing, and data fetching. The application provides search and streaming featur
 routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
     techStack: ["Next.js", "React", "TypeScript", "TailwindCSS"],
     url: "/",
-    imgUrl: "/tnam.io.png",
+    imgUrl: "/logo-2-dark.png",
   },
 ];
 

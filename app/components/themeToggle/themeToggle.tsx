@@ -17,8 +17,6 @@ function ThemeToggle() {
     return null;
   }
 
-  console.log(theme);
-
   return (
     <button
       aria-label={`Change to ${theme ? "light" : "dark"} mode`}
