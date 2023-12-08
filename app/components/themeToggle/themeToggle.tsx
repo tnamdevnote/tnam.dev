@@ -1,21 +1,33 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Icon from "../icon/icon";
-import { useDarkModeContext } from "@/app/context/darkmodeContext";
+import { useTheme } from "next-themes";
 
 function ThemeToggle() {
-  const { isDarkMode, toggleDarkMode } = useDarkModeContext();
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+  console.log(theme);
 
   return (
     <button
-      aria-label={`Change to ${isDarkMode ? "light" : "dark"} mode`}
-      title={`Change to ${isDarkMode ? "light" : "dark"} mode`}
+      aria-label={`Change to ${theme ? "light" : "dark"} mode`}
+      title={`Change to ${theme ? "light" : "dark"} mode`}
       type="button"
-      className="dark:text-dark-accent-8 cursor-pointer text-accent-8"
-      onClick={() => toggleDarkMode}
+      className="cursor-pointer text-accent-8 dark:text-dark-accent-8"
+      onClick={() => setTheme(theme === "light" ? "Moon" : "Sun")}
     >
-      <Icon name={isDarkMode ? "Sun" : "Moon"} />
+      <Icon name={theme === "light" ? "Moon" : "Sun"} />
     </button>
   );
 }
