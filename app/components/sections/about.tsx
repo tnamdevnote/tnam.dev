@@ -30,7 +30,7 @@ function About() {
         <br />
         These two seemingly disparate interests came together when I first wrote
         a few lines of CSS and JavaScript at work to update a simple button UI.
-        This was the "aha!" moment that led me into a career in&nbsp;
+        This was the &quot;aha!&quot; moment that led me into a career in&nbsp;
         <b className="text-teal-600 dark:text-teal-500">
           front-end development.
         </b>
@@ -40,7 +40,7 @@ function About() {
         <br />
         <br />
         In my recent year at Eidex, I was involved in a project to upgrade one
-        of the company's flagship products (PRISM 2.0), where I&nbsp;
+        of the company&apos;s flagship products (PRISM 2.0), where I&nbsp;
         <b className="text-teal-600 dark:text-teal-500">designed</b> and&nbsp;
         <b className="text-teal-600 dark:text-teal-500">
           implemented UI features and components

@@ -42,7 +42,7 @@ export default function Home() {
                   </div>
                   <h1 className="mb-1 text-h2 text-accent-8 dark:text-dark-accent-8 lg:text-h2">
                     <a href="/">
-                      hey, I'm Taek
+                      hey, I&apos;m Taek
                       <span className="ml-2 text-lg font-normal text-accent-4 dark:text-dark-accent-4">
                         (tɛ́k)
                       </span>
