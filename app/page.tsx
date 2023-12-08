@@ -60,11 +60,11 @@ export default function Home() {
                       href={contact.url}
                       aria-label={contact.name}
                       target="_blank"
-                      className="group rounded-lg text-accent-4 transition-all dark:text-dark-accent-7"
+                      className="rounded-lg text-accent-4 transition-all dark:text-dark-accent-7"
                     >
                       <Icon
                         name={contact.name}
-                        className="transition-transform group-hover:scale-[1.1]"
+                        className="stroke-[1px] transition-colors hover:text-teal-600 dark:hover:text-teal-400"
                       />
                     </a>
                   ))}
@@ -79,11 +79,11 @@ export default function Home() {
                       href={contact.url}
                       aria-label={contact.name}
                       target="_blank"
-                      className="group rounded-lg text-accent-5 transition-all dark:text-dark-accent-7"
+                      className="rounded-lg text-accent-8 transition-all dark:text-dark-accent-8"
                     >
                       <Icon
                         name={contact.name}
-                        className="h-6 w-6 font-bold transition-transform group-hover:scale-[1.1]"
+                        className="h-6 w-6 stroke-[1px] font-bold transition-colors hover:text-teal-600 dark:hover:text-teal-400"
                       />
                     </a>
                   ))}

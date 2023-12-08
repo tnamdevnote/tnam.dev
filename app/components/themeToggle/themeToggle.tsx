@@ -27,7 +27,10 @@ function ThemeToggle() {
       className="cursor-pointer text-accent-8 dark:text-dark-accent-8"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
-      <Icon name={theme === "light" ? "Moon" : "Sun"} />
+      <Icon
+        className="stroke-[1px] transition-colors hover:text-teal-600 dark:hover:text-teal-400"
+        name={theme === "light" ? "Moon" : "Sun"}
+      />
     </button>
   );
 }
