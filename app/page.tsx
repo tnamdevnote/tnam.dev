@@ -12,17 +12,16 @@ import ThemeToggle from "./components/themeToggle/themeToggle";
 export default function Home() {
   return (
     <div className="flex w-full">
-      {/* <Cursor /> */}
       <div className="fixed inset-0 flex justify-center sm:px-8">
         <div className="flex w-full max-w-screen-xl">
           <div className="w-full bg-background ring-1 ring-accent-2 dark:bg-dark-accent-2/40 dark:ring-dark-accent-2"></div>
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        <nav className="flex w-full max-w-screen-xl justify-end px-6 pt-12 md:mx-auto md:px-14 lg:px-20">
+        <nav className="flex w-full max-w-screen-xl justify-end px-6 pt-12 sm:px-16 md:mx-auto md:px-24 lg:px-24">
           <ThemeToggle />
         </nav>
-        <section className="mx-auto grid min-h-screen max-w-screen-xl grid-cols-6 gap-8 px-6 py-16   md:grid-cols-12 md:px-14 md:py-20 lg:grid-cols-6 lg:gap-10 lg:px-20 lg:py-0">
+        <section className="mx-auto grid min-h-screen max-w-screen-xl grid-cols-6 gap-8 px-6 py-16 sm:px-16 md:grid-cols-12 md:px-24 md:py-20 lg:grid-cols-6 lg:gap-10 lg:px-24 lg:py-0">
           <TOCListProvider>
             <header className="lg: col-span-full flex-col lg:fixed lg:top-0 lg:col-span-3 lg:flex lg:min-h-screen lg:gap-8 lg:pb-24 lg:pt-24">
               <hgroup>
