@@ -9,7 +9,6 @@ import { CONTACTS } from "@/config";
 import Icon from "./components/icon/icon";
 import ThemeToggle from "./components/themeToggle/themeToggle";
 import Cursor from "./components/cursor/cursor";
-import { useRef } from "react";
 
 export default function Home() {
   return (
@@ -45,7 +44,7 @@ export default function Home() {
                     <a href="/">
                       hey, I'm Taek
                       <span className="ml-2 text-lg font-normal text-accent-4 dark:text-dark-accent-4">
-                        {"(tɛ́k)"}
+                        (tɛ́k)
                       </span>
                     </a>
                   </h1>
