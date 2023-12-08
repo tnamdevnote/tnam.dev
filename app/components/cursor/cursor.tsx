@@ -8,10 +8,10 @@ function Cursor() {
 
   return (
     <motion.div
-      className="pointer-events-none fixed z-50 h-8 w-8 -translate-x-10 -translate-y-10 rounded-full bg-teal-400 mix-blend-exclusion will-change-transform"
+      className="pointer-events-none fixed z-50 h-4 w-4 -translate-x-10 -translate-y-10 rounded-full bg-teal-400 mix-blend-exclusion will-change-transform"
       animate={{
-        x: x - 32 / 2,
-        y: y - 32 / 2,
+        x: x - 16 / 2,
+        y: y - 16 / 2,
       }}
     ></motion.div>
   );
