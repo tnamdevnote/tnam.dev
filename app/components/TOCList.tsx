@@ -29,8 +29,8 @@ function TOCList() {
                 activePath === path ? "active" : ""
               }`}
             >
-              <span className="toc-indicator dark:bg-dark-accent-6 dark:group-hover:bg-dark-accent-8 dark:group-focus-visible:bg-dark-accent-8 mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-8 group-focus-visible:w-16 group-focus-visible:bg-accent-8"></span>
-              <span className="toc-text group-focus-visible:text-primary-cyan dark:group-hover:text-dark-accent-8 dark:text-dark-accent-6 text-small text-accent-3 group-hover:text-accent-8">
+              <span className="toc-indicator mr-4 h-px w-8 bg-accent-3 transition-all group-hover:w-16 group-hover:bg-accent-8 group-focus-visible:w-16 group-focus-visible:bg-accent-8 dark:bg-dark-accent-6 dark:group-hover:bg-dark-accent-8 dark:group-focus-visible:bg-dark-accent-8"></span>
+              <span className="toc-text text-small text-accent-3 group-hover:text-accent-8 group-focus-visible:text-accent-8 dark:text-dark-accent-6 dark:group-hover:text-dark-accent-8">
                 {name}
               </span>
             </a>

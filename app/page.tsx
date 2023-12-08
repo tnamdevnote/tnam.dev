@@ -23,7 +23,7 @@ export default function Home() {
         </nav>
         <section className="mx-auto grid min-h-screen max-w-screen-xl grid-cols-6 gap-8 px-6 py-16 sm:px-16 md:grid-cols-12 md:px-24 md:py-20 lg:grid-cols-6 lg:gap-10 lg:px-24 lg:py-0">
           <TOCListProvider>
-            <header className="lg: col-span-full flex-col lg:fixed lg:top-0 lg:col-span-3 lg:flex lg:min-h-screen lg:gap-8 lg:pb-24 lg:pt-24">
+            <header className="col-span-full flex-col lg:fixed lg:col-span-3 lg:flex lg:min-h-screen lg:gap-8 lg:pb-32 lg:pt-24">
               <hgroup>
                 <div
                   className="mb-4 w-fit rounded-full shadow-lg"
@@ -69,7 +69,7 @@ export default function Home() {
                   ))}
                 </div>
               </hgroup>
-              <aside className="lg:h hidden lg:mt-14 lg:flex lg:flex-grow lg:flex-col lg:justify-between">
+              <aside className="hidden lg:mt-14 lg:flex lg:flex-grow lg:flex-col lg:justify-between">
                 <TOCList />
                 <div className="flex gap-4">
                   {CONTACTS.map((contact) => (

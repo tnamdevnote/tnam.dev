@@ -23,9 +23,13 @@ function About() {
       <article className="text-body text-accent-6 dark:text-dark-accent-6">
         Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis
         nulla eu sagittis. Quisque nec eros eget lectus fermentum vehicula.
-        Donec odio leo, tristique sit amet fringilla a, pellentesque eu nibh. In
-        dapibus ex ut leo molestie, quis rhoncus turpis vulputate. Vestibulum
+        Donec odio leo, tristique sit amet fringilla a, pellentesque eu nibh.
+        <br />
+        <br />
+        In dapibus ex ut leo molestie, quis rhoncus turpis vulputate. Vestibulum
         vitae condimentum nibh, at semper ipsum. Praesent accumsan nisl in
+        <br />
+        <br />
         tempor tincidunt. Fusce id viverra mi, eget faucibus. pellentesque eu
         nibh. In dapibus ex ut leo molestie, quis rhoncus turpis vulputate.
         Vestibulum vitae condimentum nibh, at semper ipsum. Praesent accumsan

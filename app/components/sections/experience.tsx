@@ -21,13 +21,13 @@ function Experience() {
 
   return (
     <section id="experience" className="mb-24 scroll-mt-24" ref={expRef}>
-      <h3 className="dark:text-dark-accent-8 mb-4 text-body-bold text-accent-8 lg:hidden">
+      <h3 className="mb-4 text-body-bold text-accent-8 dark:text-dark-accent-8 lg:hidden">
         EXPERIENCE
       </h3>
-      <h3 className="dark:text-dark-accent-7 text-body font-semibold text-accent-7">
+      <h3 className="text-body font-semibold text-accent-7 dark:text-dark-accent-7">
         Eidex, LLC
       </h3>
-      <p className="dark:text-dark-accent-6 mb-3 w-full text-small text-accent-4">
+      <p className="mb-3 w-full text-small text-accent-4 dark:text-dark-accent-6">
         Full-time · NOV 2016 — AUG 2023
       </p>
       <ol className="group/list">
@@ -40,7 +40,7 @@ function Experience() {
             <Card>
               <Card.Header title={exp.title} subheader={exp.date} />
               <Card.Content>
-                <p className="dark:text-dark-accent-6 text-small text-accent-5">
+                <p className="text-small text-accent-5 dark:text-dark-accent-6">
                   {exp.description}
                 </p>
                 <ul
@@ -59,7 +59,7 @@ function Experience() {
         ))}
       </ol>
       <a href="/resume.pdf" target="_blank" className="group inline-block">
-        <span className="dark:text-dark-accent-7 dark:group-hover:border-b-dark-accent-8 flex items-center gap-2 border-b border-transparent px-1 pb-px text-body text-accent-7 transition group-hover:border-b-accent-8">
+        <span className="flex items-center gap-2 px-1 text-body text-accent-7 transition dark:text-dark-accent-7">
           Click to see full resume!
           <ArrowIcon className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
         </span>
