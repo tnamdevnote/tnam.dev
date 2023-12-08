@@ -25,7 +25,7 @@ function ThemeToggle() {
       title={`Change to ${theme ? "light" : "dark"} mode`}
       type="button"
       className="cursor-pointer text-accent-8 dark:text-dark-accent-8"
-      onClick={() => setTheme(theme === "light" ? "Moon" : "Sun")}
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <Icon name={theme === "light" ? "Moon" : "Sun"} />
     </button>

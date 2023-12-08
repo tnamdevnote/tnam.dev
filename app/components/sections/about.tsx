@@ -16,11 +16,11 @@ function About() {
   }, [isIntersecting]);
 
   return (
-    <section id="about" className="mb-36 scroll-mt-24" ref={aboutRef}>
-      <h3 className="dark:text-dark-accent-8 mb-4 text-body-bold text-accent-8 lg:hidden">
+    <section id="about" className="mb-36 scroll-mt-44" ref={aboutRef}>
+      <h3 className="mb-4 text-body-bold text-accent-8 dark:text-dark-accent-8 lg:hidden">
         ABOUT
       </h3>
-      <article className="dark:text-dark-accent-6 text-body text-accent-6">
+      <article className="text-body text-accent-6 dark:text-dark-accent-6">
         Phasellus non ligula ut erat bibendum mollis. Aliquam accumsan mollis
         nulla eu sagittis. Quisque nec eros eget lectus fermentum vehicula.
         Donec odio leo, tristique sit amet fringilla a, pellentesque eu nibh. In

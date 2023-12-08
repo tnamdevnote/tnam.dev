@@ -1,12 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// import { DarkModeProvider } from "./context/darkmodeContext";
 import { ThemeProvider } from "./context/themeProvider";
 
 export const metadata: Metadata = {
   title: "tnamdevnote",
   description: "Welcome to tnamdevnote",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 const inter = Inter({
@@ -21,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en" className={inter.className}>
-      <body className="bg-background transition-colors dark:bg-dark-background">
+      <body className="bg-accent-2/20 dark:bg-dark-background">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
