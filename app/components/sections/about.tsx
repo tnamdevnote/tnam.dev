@@ -23,20 +23,17 @@ function About() {
       <article className="text-body text-accent-6 dark:text-dark-accent-7">
         <b className="text-teal-600 dark:text-teal-500">Art</b> and&nbsp;
         <b className="text-teal-600 dark:text-teal-500">craft</b> have always
-        been my passion. I’m fascinated by visually pleasing and user-friendly
-        designs, and equally, I enjoy delving into the technical aspects and all
-        the nitty-gritty details.
-        <br />
-        <br />
-        These two seemingly disparate interests came together when I first wrote
-        a few lines of CSS and JavaScript at work to update a simple button UI.
-        This was the &quot;aha!&quot; moment that led me into a career in&nbsp;
+        been my passion. These two seemingly contrasting interests came together
+        when I first wrote a few lines of CSS and JavaScript at work to update a
+        simple button UI. This was the &quot;aha!&quot; moment that led me into
+        a career in&nbsp;
         <b className="text-teal-600 dark:text-teal-500">
           front-end development.
         </b>
-        &nbsp; I attended Springboard coding academy where I spent 8 months
-        learning the fundamentals of front-end and back-end development while
-        working full-time.
+        <br />
+        <br />
+        I attended Springboard coding academy where I spent 8 months learning
+        the fundamentals of front-end development while working full-time.
         <br />
         <br />
         In my recent year at Eidex, I was involved in a project to upgrade one
