@@ -96,6 +96,15 @@ export default function Home() {
                 <About />
                 <Experience />
                 <Projects />
+                <div className="mt-20">
+                  <p className="text-sm text-accent-4 dark:text-dark-accent-6">
+                    Built with Next.js and TailwindCSS. Deployed on Vercel.
+                    <br />
+                    <a href="https://brittanychiang.com/" target="_blank">
+                      Design inspired by Bbrittanychiang.com
+                    </a>
+                  </p>
+                </div>
               </section>
             </TOCListProvider>
           </section>
