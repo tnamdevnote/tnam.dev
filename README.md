@@ -2,6 +2,6 @@
 
 ### Todo List
 - [ ] MDX Blog (WIP)
-- [ ] Add Landing Page Animatino
+- [ ] Add Landing Page Animation
 - [ ] Scalable Layout
 - [ ] Cursor hover animation
