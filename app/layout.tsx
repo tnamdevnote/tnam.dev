@@ -4,8 +4,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "./context/themeProvider";
 
 export const metadata: Metadata = {
-  title: "T. Nam | Front End Developer",
-  description: "Welcome to tnamdevnote",
+  title: "Luke Nam | Front End Developer",
   icons: {
     icon: "/favicon.png",
   },

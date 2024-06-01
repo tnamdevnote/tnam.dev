@@ -41,12 +41,7 @@ export default function Home() {
                     />
                   </div>
                   <h1 className="mb-1 text-h2 text-accent-8 dark:text-dark-accent-8 lg:text-h2">
-                    <a href="/">
-                      hey, I&apos;m Taek
-                      <span className="ml-2 text-lg font-normal text-accent-4 dark:text-dark-accent-4">
-                        (tɛ́k)
-                      </span>
-                    </a>
+                    <a href="/">hey, I&apos;m Luke 👋</a>
                   </h1>
                   <h3 className="text-h3 font-light text-accent-4 dark:text-dark-accent-6">
                     Frontend Developer
