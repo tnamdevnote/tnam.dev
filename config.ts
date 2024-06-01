@@ -16,7 +16,7 @@ export const TOC_LIST = [
 export const EXPERIENCE = [
   {
     title: "Frontend Engineer - PRISM 2.0",
-    date: "JAN, 2022 — SEP, 2023",
+    date: "OCT, 2019 — AUG, 2023",
     description: `Modernized 5+ legacy features through design and development overhaul, addressing user needs and design aesthetic; Communicated design and technical requirements during design reviews within a cross-functional team of 5 by creating wireframes and interactive prototype;`,
     techStack: [
       "React",
@@ -30,24 +30,8 @@ export const EXPERIENCE = [
     ],
   },
   {
-    title: "Frontend Engineer - Academic Module",
-    date: "NOV, 2019 — JAN, 2022",
-    description: `Used React daily to create and maintained 128+ visualizations of school data that help educators analyze trends to improve and support student success`,
-    techStack: [
-      "React",
-      "JavaScript",
-      "CSS modules",
-      "MUI",
-      "redux",
-      "redux-saga",
-      "Snowflake",
-      "SQL",
-      "Qliksense",
-    ],
-  },
-  {
     title: "Data Warehouse Analyst",
-    date: "NOV, 2018 — NOV, 2019",
+    date: "NOV, 2018 — OCT, 2019",
     description: `Developed data pipelines using SQL to ingest statewide assessment data, creating data views for utilization in BI tools like Qliksense`,
     techStack: ["SQL", "Snowflake", "Data Warehousing", "ETL"],
   },
