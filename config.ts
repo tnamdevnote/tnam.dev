@@ -15,7 +15,7 @@ export const TOC_LIST = [
 
 export const EXPERIENCE = [
   {
-    title: "Frontend Engineer - PRISM 2.0",
+    title: "Frontend Developer - PRISM 2.0",
     date: "OCT, 2019 — AUG, 2023",
     description: `Modernized 5+ legacy features through design and development overhaul, addressing user needs and design aesthetic; Communicated design and technical requirements during design reviews within a cross-functional team of 5 by creating wireframes and interactive prototype;`,
     techStack: [
@@ -30,7 +30,7 @@ export const EXPERIENCE = [
     ],
   },
   {
-    title: "Data Warehouse Analyst",
+    title: "Data Warehouse Developer",
     date: "NOV, 2018 — OCT, 2019",
     description: `Developed data pipelines using SQL to ingest statewide assessment data, creating data views for utilization in BI tools like Qliksense`,
     techStack: ["SQL", "Snowflake", "Data Warehousing", "ETL"],
@@ -94,6 +94,6 @@ export const CONTACTS = [
   },
   {
     name: "Email",
-    url: "mailto:taekbeen93@gmail.com",
+    url: "mailto:luke.tb.nam@outlook.com",
   },
 ];
