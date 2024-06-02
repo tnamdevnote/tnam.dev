@@ -15,7 +15,7 @@ export const TOC_LIST = [
 
 export const EXPERIENCE = [
   {
-    title: "Frontend Developer - PRISM 2.0",
+    title: "Frontend Developer",
     date: "OCT, 2019 — AUG, 2023",
     description: `Modernized 5+ legacy features through design and development overhaul, addressing user needs and design aesthetic; Communicated design and technical requirements during design reviews within a cross-functional team of 5 by creating wireframes and interactive prototype;`,
     techStack: [
@@ -45,18 +45,18 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
-    name: "Mini Project: An Animated Like Button",
+    name: "NomadHair",
+    description: `An appointment scheduling app to help my friends easily arrange haircut appointments with me.`,
+    techStack: ["Next.js", "Sanity", "Storybook", "TailwindCSS", "Figma"],
+    url: "https://github.com/tnamdevnote/nomadhair",
+    imgUrl: "/project-nomadhair.png",
+  },
+  {
+    name: "Full of Likes - an animated like button",
     description: `Inspired by Delba and Josh Comeau, I recreated my own version of a like button that not only animates but also persists
     like counts to a database.`,
-    techStack: [
-      "React",
-      "Next.js",
-      "Prisma",
-      "PlanetScale",
-      "TailwindCSS",
-      "Figma",
-    ],
-    url: "https://medium.com/@taekbeen93/mini-project-how-i-built-a-full-stack-like-button-from-design-to-implementation-701edc1a0f0c",
+    techStack: ["Next.js", "Prisma", "PlanetScale", "TailwindCSS", "Figma"],
+    url: "https://github.com/tnamdevnote/full-of-likes",
     imgUrl: "/project-like-btn.png",
   },
   {
@@ -66,20 +66,6 @@ export const PROJECTS = [
     techStack: ["Figma", "Styled Component", "MUI"],
     url: "https://drive.google.com/file/d/1PaqNKYgW0WzZ855CbfyZW8eEIGp2IGje/view?usp=sharing",
     imgUrl: "/project-prism-2.png",
-  },
-  {
-    name: "Build Youtube",
-    description: `Built client-side Youtube application in order to learn and apply frontend development practices, including theming,
-routing, and data fetching. The application provides search and streaming features using Youtube Data API.`,
-    techStack: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "TanstackQuery",
-      "RESTful API",
-    ],
-    url: "https://github.com/tnamdevnote/youtube-clone",
-    imgUrl: "/project-yc-light.png",
   },
 ];
 
